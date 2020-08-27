@@ -18,8 +18,9 @@ public:
 
 	void render();
 
-	void addCamera(Camera* cam);
-	void removeCamera(Camera* cam);
+	void                        addCamera(Camera* cam);
+	void                        removeCamera(Camera* cam);
+	const std::vector<Camera*>& getCameras() const;
 
 private:
 	Size                 size;

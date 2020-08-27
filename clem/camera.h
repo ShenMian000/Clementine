@@ -19,6 +19,7 @@ public:
 private:
 	Size   size;
 	Scene& scene;
+  ushort depth;
 };
 
 #endif // CLEM_CAMERA_H_
