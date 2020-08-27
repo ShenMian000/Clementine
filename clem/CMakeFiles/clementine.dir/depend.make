@@ -8,6 +8,13 @@ clem/CMakeFiles/clementine.dir/attribute.cpp.o: clem/coord.hpp
 clem/CMakeFiles/clementine.dir/attribute.cpp.o: clem/os.hpp
 clem/CMakeFiles/clementine.dir/attribute.cpp.o: clem/size.hpp
 
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/camera.cpp
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/camera.h
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/common.hpp
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/coord.hpp
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/os.hpp
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/size.hpp
+
 clem/CMakeFiles/clementine.dir/cursor.cpp.o: clem/cursor.cpp
 clem/CMakeFiles/clementine.dir/cursor.cpp.o: clem/cursor.h
 clem/CMakeFiles/clementine.dir/cursor.cpp.o: clem/common.hpp
@@ -39,6 +46,7 @@ clem/CMakeFiles/clementine.dir/input_component.cpp.o: clem/size.hpp
 
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/main.cpp
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/attribute.h
+clem/CMakeFiles/clementine.dir/main.cpp.o: clem/camera.h
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/clem.hpp
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/common.hpp
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/coord.hpp
@@ -50,6 +58,7 @@ clem/CMakeFiles/clementine.dir/main.cpp.o: clem/scene.h
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/size.hpp
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/texture.hpp
 
+clem/CMakeFiles/clementine.dir/scene.cpp.o: clem/camera.h
 clem/CMakeFiles/clementine.dir/scene.cpp.o: clem/renderer.h
 clem/CMakeFiles/clementine.dir/scene.cpp.o: clem/scene.cpp
 clem/CMakeFiles/clementine.dir/scene.cpp.o: clem/scene.h

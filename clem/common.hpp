@@ -6,6 +6,7 @@
 
 typedef unsigned short ushort;
 
+#include <stdio.h>
 #include <assert.h>
 
 #include "os.hpp"

@@ -186,6 +186,33 @@ attribute.cpp.s:
 	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/attribute.cpp.s
 .PHONY : attribute.cpp.s
 
+camera.o: camera.cpp.o
+
+.PHONY : camera.o
+
+# target to build an object file
+camera.cpp.o:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/camera.cpp.o
+.PHONY : camera.cpp.o
+
+camera.i: camera.cpp.i
+
+.PHONY : camera.i
+
+# target to preprocess a source file
+camera.cpp.i:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/camera.cpp.i
+.PHONY : camera.cpp.i
+
+camera.s: camera.cpp.s
+
+.PHONY : camera.s
+
+# target to generate assembly for a file
+camera.cpp.s:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/camera.cpp.s
+.PHONY : camera.cpp.s
+
 cursor.o: cursor.cpp.o
 
 .PHONY : cursor.o
@@ -337,6 +364,9 @@ help:
 	@echo "... attribute.o"
 	@echo "... attribute.i"
 	@echo "... attribute.s"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
 	@echo "... cursor.o"
 	@echo "... cursor.i"
 	@echo "... cursor.s"

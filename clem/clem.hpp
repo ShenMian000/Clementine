@@ -8,7 +8,9 @@
 
 #include <clem/attribute.h>
 #include <clem/cursor.h>
+
 #include <clem/scene.h>
+#include <clem/camera.h>
 #include <clem/game_object.h>
 
 #endif // CLEM_CLEM_HPP_

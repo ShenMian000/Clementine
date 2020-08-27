@@ -89,9 +89,22 @@ clem/CMakeFiles/clementine.dir/attribute.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clementine.dir/attribute.cpp.s"
 	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sms/Clementine/clem/attribute.cpp -o CMakeFiles/clementine.dir/attribute.cpp.s
 
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/CMakeFiles/clementine.dir/flags.make
+clem/CMakeFiles/clementine.dir/camera.cpp.o: clem/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object clem/CMakeFiles/clementine.dir/camera.cpp.o"
+	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clementine.dir/camera.cpp.o -c /home/sms/Clementine/clem/camera.cpp
+
+clem/CMakeFiles/clementine.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clementine.dir/camera.cpp.i"
+	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sms/Clementine/clem/camera.cpp > CMakeFiles/clementine.dir/camera.cpp.i
+
+clem/CMakeFiles/clementine.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clementine.dir/camera.cpp.s"
+	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sms/Clementine/clem/camera.cpp -o CMakeFiles/clementine.dir/camera.cpp.s
+
 clem/CMakeFiles/clementine.dir/cursor.cpp.o: clem/CMakeFiles/clementine.dir/flags.make
 clem/CMakeFiles/clementine.dir/cursor.cpp.o: clem/cursor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object clem/CMakeFiles/clementine.dir/cursor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object clem/CMakeFiles/clementine.dir/cursor.cpp.o"
 	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clementine.dir/cursor.cpp.o -c /home/sms/Clementine/clem/cursor.cpp
 
 clem/CMakeFiles/clementine.dir/cursor.cpp.i: cmake_force
@@ -104,7 +117,7 @@ clem/CMakeFiles/clementine.dir/cursor.cpp.s: cmake_force
 
 clem/CMakeFiles/clementine.dir/game_object.cpp.o: clem/CMakeFiles/clementine.dir/flags.make
 clem/CMakeFiles/clementine.dir/game_object.cpp.o: clem/game_object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object clem/CMakeFiles/clementine.dir/game_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object clem/CMakeFiles/clementine.dir/game_object.cpp.o"
 	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clementine.dir/game_object.cpp.o -c /home/sms/Clementine/clem/game_object.cpp
 
 clem/CMakeFiles/clementine.dir/game_object.cpp.i: cmake_force
@@ -117,7 +130,7 @@ clem/CMakeFiles/clementine.dir/game_object.cpp.s: cmake_force
 
 clem/CMakeFiles/clementine.dir/input_component.cpp.o: clem/CMakeFiles/clementine.dir/flags.make
 clem/CMakeFiles/clementine.dir/input_component.cpp.o: clem/input_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object clem/CMakeFiles/clementine.dir/input_component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object clem/CMakeFiles/clementine.dir/input_component.cpp.o"
 	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clementine.dir/input_component.cpp.o -c /home/sms/Clementine/clem/input_component.cpp
 
 clem/CMakeFiles/clementine.dir/input_component.cpp.i: cmake_force
@@ -130,7 +143,7 @@ clem/CMakeFiles/clementine.dir/input_component.cpp.s: cmake_force
 
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/CMakeFiles/clementine.dir/flags.make
 clem/CMakeFiles/clementine.dir/main.cpp.o: clem/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object clem/CMakeFiles/clementine.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object clem/CMakeFiles/clementine.dir/main.cpp.o"
 	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clementine.dir/main.cpp.o -c /home/sms/Clementine/clem/main.cpp
 
 clem/CMakeFiles/clementine.dir/main.cpp.i: cmake_force
@@ -143,7 +156,7 @@ clem/CMakeFiles/clementine.dir/main.cpp.s: cmake_force
 
 clem/CMakeFiles/clementine.dir/scene.cpp.o: clem/CMakeFiles/clementine.dir/flags.make
 clem/CMakeFiles/clementine.dir/scene.cpp.o: clem/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object clem/CMakeFiles/clementine.dir/scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object clem/CMakeFiles/clementine.dir/scene.cpp.o"
 	cd /home/sms/Clementine/clem && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clementine.dir/scene.cpp.o -c /home/sms/Clementine/clem/scene.cpp
 
 clem/CMakeFiles/clementine.dir/scene.cpp.i: cmake_force
@@ -157,6 +170,7 @@ clem/CMakeFiles/clementine.dir/scene.cpp.s: cmake_force
 # Object files for target clementine
 clementine_OBJECTS = \
 "CMakeFiles/clementine.dir/attribute.cpp.o" \
+"CMakeFiles/clementine.dir/camera.cpp.o" \
 "CMakeFiles/clementine.dir/cursor.cpp.o" \
 "CMakeFiles/clementine.dir/game_object.cpp.o" \
 "CMakeFiles/clementine.dir/input_component.cpp.o" \
@@ -167,6 +181,7 @@ clementine_OBJECTS = \
 clementine_EXTERNAL_OBJECTS =
 
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/attribute.cpp.o
+lib/libclementine.a: clem/CMakeFiles/clementine.dir/camera.cpp.o
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/cursor.cpp.o
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/game_object.cpp.o
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/input_component.cpp.o
@@ -174,7 +189,7 @@ lib/libclementine.a: clem/CMakeFiles/clementine.dir/main.cpp.o
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/scene.cpp.o
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/build.make
 lib/libclementine.a: clem/CMakeFiles/clementine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../lib/libclementine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../lib/libclementine.a"
 	cd /home/sms/Clementine/clem && $(CMAKE_COMMAND) -P CMakeFiles/clementine.dir/cmake_clean_target.cmake
 	cd /home/sms/Clementine/clem && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clementine.dir/link.txt --verbose=$(VERBOSE)
 

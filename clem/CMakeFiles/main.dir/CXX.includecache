@@ -16,6 +16,10 @@ clem/common.hpp
 string
 -
 
+clem/camera.h
+clem/common.hpp
+-
+
 clem/clem.hpp
 clem/common.hpp
 -
@@ -25,10 +29,14 @@ clem/cursor.h
 -
 clem/scene.h
 -
+clem/camera.h
+-
 clem/game_object.h
 -
 
 clem/common.hpp
+stdio.h
+-
 assert.h
 -
 os.hpp

@@ -16,14 +16,14 @@ class Scene
 public:
 	Scene(const Size& size);
 
-	void addCamera();
-	void removeCamera();
-
 	void render();
+
+	void addCamera(Camera* cam);
+	void removeCamera(Camera* cam);
 
 private:
 	Size                 size;
-	Renderer&            renderer;
+	Renderer*            renderer;
 	std::vector<Camera*> cameras;
 };
 

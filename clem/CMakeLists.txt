@@ -3,14 +3,16 @@
 
 # 添加 源文件
 
-if(CMAKE_SYSTEM_NAME MATCHES "Windows")
-	file(GLOB PLATFORM_SOURCES "*.cpp")
-elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
-	file(GLOB PLATFORM_SOURCES "*.cpp")
-endif()
+file(GLOB sources "*.cpp")
+
+# if(CMAKE_SYSTEM_NAME MATCHES "Windows")
+# 	file(GLOB PLATFORM_SOURCES "*.cpp")
+# elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
+# 	file(GLOB PLATFORM_SOURCES "*.cpp")
+# endif()
 
 # 创建 lib 库
-add_library(clementine STATIC ${PLATFORM_SOURCES})
+add_library(clementine STATIC ${sources})
 
 # 创建 可执行文件
 add_executable(main main.cpp)

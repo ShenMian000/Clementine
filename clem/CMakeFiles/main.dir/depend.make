@@ -3,6 +3,7 @@
 
 clem/CMakeFiles/main.dir/main.cpp.o: clem/main.cpp
 clem/CMakeFiles/main.dir/main.cpp.o: clem/attribute.h
+clem/CMakeFiles/main.dir/main.cpp.o: clem/camera.h
 clem/CMakeFiles/main.dir/main.cpp.o: clem/clem.hpp
 clem/CMakeFiles/main.dir/main.cpp.o: clem/common.hpp
 clem/CMakeFiles/main.dir/main.cpp.o: clem/coord.hpp
