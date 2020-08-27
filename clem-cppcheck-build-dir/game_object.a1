@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1237385230">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Vector::direction&apos; is not initialized in the constructor." verbose="Member variable &apos;Vector::direction&apos; is not initialized in the constructor." cwe="398">
+            <location file0="clem\game_object.cpp" file="clem\vector.hpp" line="13" column="2"/>
+            <symbol>Vector::direction</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Vector::distance&apos; is not initialized in the constructor." verbose="Member variable &apos;Vector::distance&apos; is not initialized in the constructor." cwe="398">
+            <location file0="clem\game_object.cpp" file="clem\vector.hpp" line="13" column="2"/>
+            <symbol>Vector::distance</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\game_object.cpp" file="clem\attribute.h" line="18" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\game_object.cpp" file="clem\attribute.h" line="19" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\game_object.cpp" file="clem\scene.h" line="18" column="2"/>
+            <symbol>Scene</symbol>
+        </error>
+        <error id="unsignedPositive" severity="style" msg="Unsigned expression &apos;direction&apos; can&apos;t be negative so it is unnecessary to test it." verbose="Unsigned expression &apos;direction&apos; can&apos;t be negative so it is unnecessary to test it." cwe="570">
+            <location file0="clem\game_object.cpp" file="clem\vector.hpp" line="26" column="8" info="Unsigned positive"/>
+            <symbol>direction</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="update" lineNumber="14"/>
+    <functiondecl functionName="render" lineNumber="22"/>
+    <functiondecl functionName="setPosition" lineNumber="27"/>
+    <functiondecl functionName="setVelocity" lineNumber="42"/>
+    <functiondecl functionName="setTexture" lineNumber="47"/>
+    <functiondecl functionName="getPosition" lineNumber="52"/>
+    <functiondecl functionName="setDirection" lineNumber="57"/>
+    <functiondecl functionName="getTexture" lineNumber="62"/>
+    <functiondecl functionName="update" lineNumber="14"/>
+    <functiondecl functionName="render" lineNumber="22"/>
+    <functiondecl functionName="setPosition" lineNumber="27"/>
+    <functiondecl functionName="setVelocity" lineNumber="42"/>
+    <functiondecl functionName="setTexture" lineNumber="47"/>
+    <functiondecl functionName="getPosition" lineNumber="52"/>
+    <functiondecl functionName="setDirection" lineNumber="57"/>
+    <functiondecl functionName="getTexture" lineNumber="62"/>
+    <functiondecl functionName="update" lineNumber="14"/>
+    <functiondecl functionName="render" lineNumber="22"/>
+    <functiondecl functionName="setPosition" lineNumber="27"/>
+    <functiondecl functionName="setVelocity" lineNumber="42"/>
+    <functiondecl functionName="setTexture" lineNumber="47"/>
+    <functiondecl functionName="getPosition" lineNumber="52"/>
+    <functiondecl functionName="setDirection" lineNumber="57"/>
+    <functiondecl functionName="getTexture" lineNumber="62"/>
+    <functioncall functionName="Attribute"/>
+    <functioncall functionName="Coord"/>
+    <functioncall functionName="GameObject"/>
+    <functioncall functionName="Scene"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="Vector"/>
+    <functioncall functionName="attr"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="ch"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="cos"/>
+    <functioncall functionName="dec"/>
+    <functioncall functionName="decomposition"/>
+    <functioncall functionName="direction"/>
+    <functioncall functionName="distance"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="fabs"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="none"/>
+    <functioncall functionName="position"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="scene"/>
+    <functioncall functionName="sin"/>
+    <functioncall functionName="sqrt"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="texture"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="velocity"/>
+    <functioncall functionName="write"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

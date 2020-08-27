@@ -1,0 +1,7 @@
+attribute.a1::clem/attribute.cpp
+cursor.a1::clem/cursor.cpp
+game_object.a1::clem/game_object.cpp
+input_component.a1::clem/input_component.cpp
+main.a1::clem/main.cpp
+scene.a1::clem/scene.cpp
+new_attribute.a1::C:/Users/shenm/source/repos/library/Clementine/Clementine/clem/new/new_attribute.cpp

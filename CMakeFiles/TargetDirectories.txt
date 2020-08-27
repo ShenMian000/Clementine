@@ -1,0 +1,6 @@
+/home/sms/Clementine/CMakeFiles/rebuild_cache.dir
+/home/sms/Clementine/CMakeFiles/edit_cache.dir
+/home/sms/Clementine/clem/CMakeFiles/rebuild_cache.dir
+/home/sms/Clementine/clem/CMakeFiles/edit_cache.dir
+/home/sms/Clementine/clem/CMakeFiles/main.dir
+/home/sms/Clementine/clem/CMakeFiles/clementine.dir

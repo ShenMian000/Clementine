@@ -1,0 +1,17 @@
+﻿# Copyright 2020 SMS
+# License(Apache-2.0)
+
+# 添加 源文件
+
+if(CMAKE_SYSTEM_NAME MATCHES "Windows")
+	file(GLOB PLATFORM_SOURCES "*.cpp")
+elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
+	file(GLOB PLATFORM_SOURCES "*.cpp")
+endif()
+
+# 创建 lib 库
+add_library(clementine STATIC ${PLATFORM_SOURCES})
+
+# 创建 可执行文件
+add_executable(main main.cpp)
+target_link_libraries(main clementine)

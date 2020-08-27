@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libclementine.a CMakeFiles/clementine.dir/attribute.cpp.o CMakeFiles/clementine.dir/cursor.cpp.o CMakeFiles/clementine.dir/game_object.cpp.o CMakeFiles/clementine.dir/input_component.cpp.o CMakeFiles/clementine.dir/main.cpp.o CMakeFiles/clementine.dir/scene.cpp.o
+/usr/bin/ranlib ../lib/libclementine.a

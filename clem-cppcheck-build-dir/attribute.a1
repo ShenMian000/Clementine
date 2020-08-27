@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1746525151">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\attribute.cpp" file="clem\attribute.h" line="18" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\attribute.cpp" file="clem\attribute.h" line="19" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Attribute::bold_&apos; is not initialized in the constructor." verbose="Member variable &apos;Attribute::bold_&apos; is not initialized in the constructor." cwe="398">
+            <location file0="clem\attribute.cpp" file="clem\attribute.cpp" line="128" column="12"/>
+            <symbol>Attribute::bold_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Attribute::underline_&apos; is not initialized in the constructor." verbose="Member variable &apos;Attribute::underline_&apos; is not initialized in the constructor." cwe="398">
+            <location file0="clem\attribute.cpp" file="clem\attribute.cpp" line="128" column="12"/>
+            <symbol>Attribute::underline_</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Attribute::reverse_&apos; is not initialized in the constructor." verbose="Member variable &apos;Attribute::reverse_&apos; is not initialized in the constructor." cwe="398">
+            <location file0="clem\attribute.cpp" file="clem\attribute.cpp" line="128" column="12"/>
+            <symbol>Attribute::reverse_</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;bold&apos; is initialized by itself." verbose="Member variable &apos;bold&apos; is initialized by itself." cwe="665">
+            <location file0="clem\attribute.cpp" file="clem\attribute.cpp" line="130" column="21"/>
+            <symbol>bold</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;underline&apos; is initialized by itself." verbose="Member variable &apos;underline&apos; is initialized by itself." cwe="665">
+            <location file0="clem\attribute.cpp" file="clem\attribute.cpp" line="130" column="33"/>
+            <symbol>underline</symbol>
+        </error>
+        <error id="selfInitialization" severity="error" msg="Member variable &apos;reverse&apos; is initialized by itself." verbose="Member variable &apos;reverse&apos; is initialized by itself." cwe="665">
+            <location file0="clem\attribute.cpp" file="clem\attribute.cpp" line="130" column="55"/>
+            <symbol>reverse</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="print" lineNumber="11"/>
+    <functiondecl functionName="print" lineNumber="18"/>
+    <functiondecl functionName="bold" lineNumber="25"/>
+    <functiondecl functionName="underline" lineNumber="30"/>
+    <functiondecl functionName="reverse" lineNumber="35"/>
+    <functiondecl functionName="print" lineNumber="11"/>
+    <functiondecl functionName="print" lineNumber="18"/>
+    <functiondecl functionName="bold" lineNumber="25"/>
+    <functiondecl functionName="underline" lineNumber="30"/>
+    <functiondecl functionName="reverse" lineNumber="35"/>
+    <functiondecl functionName="on" lineNumber="135"/>
+    <functiondecl functionName="off" lineNumber="140"/>
+    <functiondecl functionName="compile" lineNumber="145"/>
+    <functiondecl functionName="getAttribute" lineNumber="167"/>
+    <functiondecl functionName="print" lineNumber="11"/>
+    <functiondecl functionName="print" lineNumber="18"/>
+    <functiondecl functionName="bold" lineNumber="25"/>
+    <functiondecl functionName="underline" lineNumber="30"/>
+    <functiondecl functionName="reverse" lineNumber="35"/>
+    <functiondecl functionName="on" lineNumber="83"/>
+    <functiondecl functionName="off" lineNumber="88"/>
+    <functiondecl functionName="compile" lineNumber="93"/>
+    <functiondecl functionName="getAttribute" lineNumber="119"/>
+    <functioncall functionName="Attribute"/>
+    <functioncall functionName="GetConsoleScreenBufferInfo"/>
+    <functioncall functionName="GetLastError"/>
+    <functioncall functionName="GetStdHandle"/>
+    <functioncall functionName="SetConsoleTextAttribute"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="back"/>
+    <functioncall functionName="bold"/>
+    <functioncall functionName="bold_"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="bufInfo"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="ch"/>
+    <functioncall functionName="compile"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fore"/>
+    <functioncall functionName="hStdOut"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="newAttribute"/>
+    <functioncall functionName="none"/>
+    <functioncall functionName="off"/>
+    <functioncall functionName="oldAttribute"/>
+    <functioncall functionName="on"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="putchar"/>
+    <functioncall functionName="ret"/>
+    <functioncall functionName="reverse"/>
+    <functioncall functionName="reverse_"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="to_string"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="underline"/>
+    <functioncall functionName="underline_"/>
+    <functioncall functionName="wAttributes"/>
+  </FileInfo>
+</analyzerinfo>

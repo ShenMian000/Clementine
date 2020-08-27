@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sms/Clementine/examples/greedy_snake/main.cpp
+clem/attribute.h
+-
+
+clem/attribute.h
+clem/common.hpp
+-
+string
+-
+
+clem/common.hpp
+assert.h
+-
+os.hpp
+clem/os.hpp
+coord.hpp
+clem/coord.hpp
+size.hpp
+clem/size.hpp
+
+clem/coord.hpp
+math.h
+-
+
+clem/os.hpp
+
+clem/size.hpp
+common.hpp
+clem/common.hpp
+

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3421674511">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\attribute.h" line="18" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\attribute.h" line="19" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\scene.h" line="18" column="2"/>
+            <symbol>Scene</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="print" lineNumber="30"/>
+    <functiondecl functionName="print" lineNumber="35"/>
+    <functiondecl functionName="write" lineNumber="45"/>
+    <functiondecl functionName="resize" lineNumber="54"/>
+    <functiondecl functionName="resize" lineNumber="60"/>
+    <functioncall functionName="Attribute"/>
+    <functioncall functionName="GetStdHandle"/>
+    <functioncall functionName="Scene"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="WriteConsoleOutputA"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="attr"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="bufferCoord"/>
+    <functioncall functionName="bufferSize"/>
+    <functioncall functionName="ch"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="getAttribute"/>
+    <functioncall functionName="hStdOut"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="none"/>
+    <functioncall functionName="print"/>
+    <functioncall functionName="rect"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="ret"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="texture"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

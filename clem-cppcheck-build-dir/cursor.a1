@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3637407912">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getInstance" lineNumber="19"/>
+    <functiondecl functionName="moveTo" lineNumber="26"/>
+    <functiondecl functionName="moveUp" lineNumber="31"/>
+    <functiondecl functionName="moveDown" lineNumber="37"/>
+    <functiondecl functionName="moveRight" lineNumber="42"/>
+    <functiondecl functionName="moveLeft" lineNumber="47"/>
+    <functiondecl functionName="show" lineNumber="53"/>
+    <functiondecl functionName="hide" lineNumber="69"/>
+    <functiondecl functionName="getX" lineNumber="92"/>
+    <functiondecl functionName="getY" lineNumber="101"/>
+    <functioncall functionName="Cursor"/>
+    <functioncall functionName="FALSE"/>
+    <functioncall functionName="GetConsoleCursorInfo"/>
+    <functioncall functionName="GetConsoleScreenBufferInfo"/>
+    <functioncall functionName="GetLastError"/>
+    <functioncall functionName="GetStdHandle"/>
+    <functioncall functionName="SetConsoleCursorInfo"/>
+    <functioncall functionName="SetConsoleCursorPosition"/>
+    <functioncall functionName="TRUE"/>
+    <functioncall functionName="X"/>
+    <functioncall functionName="Y"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="bufInfo"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="curInfo"/>
+    <functioncall functionName="getX"/>
+    <functioncall functionName="getY"/>
+    <functioncall functionName="hStdOut"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="moveTo"/>
+    <functioncall functionName="ret"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="short"/>
+    <functioncall functionName="to_string"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>
