@@ -38,6 +38,16 @@ void Terminal::Cursor::hide()
 
 #include <windows.h>
 
+Size Terminal::getWindowSize()
+{
+	CONSOLE_SCREEN_BUFFER_INFO bufInfo;
+
+	GetConsoleScreenBufferInfo(hStdOut, &bufInfo);
+
+	return {bufInfo.dwCursorPosition.X, bufInfo.dwCursorPosition.Y};
+
+}
+
 void Terminal::Cursor::moveTo(const Coord& coord)
 {
   SetConsoleCursorPosition(hStdOut, {x, y});
