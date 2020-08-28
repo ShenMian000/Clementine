@@ -1,0 +1,11 @@
+# ninja log v5
+67	924	620344223	clem/CMakeFiles/clementine.dir/terminal.cpp.obj	2045863da440497a
+23	1061	620344223	clem/CMakeFiles/clementine.dir/input_component.cpp.obj	1a748b5b4641ab1
+1	1175	620344223	clem/CMakeFiles/clementine.dir/attribute.cpp.obj	59d5f3cdd55556d8
+46	1208	620344223	clem/CMakeFiles/clementine.dir/camera.cpp.obj	3f7ed441cb000d41
+35	1265	620344223	clem/CMakeFiles/clementine.dir/common_renderer.cpp.obj	4b0f5e55dcdfac2a
+12	1272	620344223	clem/CMakeFiles/clementine.dir/game_object.cpp.obj	ca16e6dd0ca2487e
+57	1295	620344223	clem/CMakeFiles/clementine.dir/scene.cpp.obj	687f5429c1104994
+78	1306	620344223	examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.obj	dc538561f962f835
+1295	1348	620344223	../../lib/clementine.lib	adae05dfcf1e4e4b
+1348	1848	620344224	examples/greedy_snake/greedy_snake.exe	3b35193df99878d0

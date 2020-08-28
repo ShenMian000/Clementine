@@ -1,0 +1,10 @@
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/clem/CMakeFiles/clementine.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/clem/CMakeFiles/edit_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/clem/CMakeFiles/rebuild_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/CMakeFiles/edit_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/CMakeFiles/rebuild_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/CMakeFiles/greedy_snake.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/CMakeFiles/edit_cache.dir
+C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/CMakeFiles/rebuild_cache.dir
