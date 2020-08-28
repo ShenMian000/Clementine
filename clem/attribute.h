@@ -63,10 +63,9 @@ namespace mode
 {
 	enum 
 	{
-		bold      = 0x0008,
-		underline = 0x8000,
-		reverse   = 0x4000,
-		size
+		bold      = 0x0100,
+		underline = 0x0200,
+		reverse   = 0x0300
 	};
 }
 

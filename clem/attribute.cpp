@@ -45,9 +45,9 @@ void Attribute::off() const
 
 void Attribute::complie(ushort attr)
 {
-	ushort fore = attr & 0x0000000f;
-	ushort back = attr & 0x000000f0;
-	ushort mode = attr & 0xffff0000;
+	ushort fore = attr & 0x000f;
+	ushort back = attr & 0x00f0;
+	ushort mode = attr & 0x0f00;
 
 	attribute = "\e[";
 
@@ -124,6 +124,15 @@ void Attribute::complie(ushort attr)
 	switch(mode)
 	{
 	case mode::bold:
+		attribute += "1;";
+		break;
+
+	case mode::underline:
+		attribute += "4;";
+		break;
+
+	case mode::reverse:
+		attribute += "7;";
 		break;
 	}
 
