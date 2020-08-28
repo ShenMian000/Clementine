@@ -17,7 +17,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: Delete CMakeCache.txt
+    - name: Clean
+      # É¾³ý CMakeCache.txt, ·ÀÖ¹ CMake Å×³ö´íÎó.
+      shell: bash
+      working-directory: ${{runner.workspace}}/build
       run: rm CMakeCache.txt
 
     - name: Create Build Environment
