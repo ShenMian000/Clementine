@@ -14,8 +14,8 @@ int main()
 	Scene scene;        // 创建场景
 	Snake snake(scene); // 将 蛇 加入场景
 
-	auto winSize = Terminal::getWinSize();             // 获取终端窗口大小
-	snake.setPosition({winSize.x / 2, winSize.y / 2}); // 将 蛇 的位置设置到场景中央
+	auto winSize = Terminal::getWinSize();                  // 获取终端窗口大小
+	snake.setPosition(Coord(winSize.x / 2, winSize.y / 2)); // 将 蛇 的位置设置到场景中央
 
 	while(true)
 	{

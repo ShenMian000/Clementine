@@ -23,8 +23,8 @@ struct Vector
 
 	void decomposition()
 	{
-		if(0 <= direction && direction <= 89 ||
-			 180 <= direction && direction <= 359)
+		if((0 <= direction && direction <= 89) ||
+			 (180 <= direction && direction <= 359))
 		{
 			dec.x = sin(direction) * distance;
 			dec.y = cos(direction) * distance;
