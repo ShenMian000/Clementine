@@ -9,5 +9,5 @@ os:
 script:
   - cd build
   - rm CMakeCache.txt
-  - cmake .
-  - cmake --build .
+  - cmake ../
+  - cmake --build ../
