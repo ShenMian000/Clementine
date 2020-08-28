@@ -10,6 +10,11 @@ typedef unsigned short ushort;
 #include <assert.h>
 
 #include "os.hpp"
+
+#ifdef OS_WIN
+  #define hStdOut GetStdHandle(STD_OUTPUT_HANDLE)
+#endif
+
 #include "coord.hpp"
 #include "size.hpp"
 
