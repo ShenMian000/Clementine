@@ -4,6 +4,6 @@ compiler:
 os:
   - linux
 script:
-	- rm CMakeCache.txt
-	- cmake .
-	- make
+  - rm CMakeCache.txt
+  - cmake .
+  - make
