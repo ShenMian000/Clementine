@@ -6,7 +6,4 @@ os:
   - linux
   - osx
 script:
-  - cd build
-  - rm CMakeCache.txt
-  - cmake ../
-  - make
+  - pwd
