@@ -10,4 +10,4 @@ script:
   - cd build
   - rm CMakeCache.txt
   - cmake ../
-  - cmake --build ../
+  - cmake --build .
