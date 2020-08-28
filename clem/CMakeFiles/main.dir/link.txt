@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o -o main   -L"/home/sms/Clementine/D:/Program Files/Program/boost_1_73_0/stage/lib"  -Wl,-rpath,"/home/sms/Clementine/D:/Program Files/Program/boost_1_73_0/stage/lib" ../lib/libclementine.a 
