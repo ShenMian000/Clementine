@@ -38,21 +38,6 @@ void Terminal::Cursor::hide()
 
 #include <windows.h>
 
-Size Terminal::getWindowSize()
-{
-	CONSOLE_SCREEN_BUFFER_INFO bufInfo;
-
-	GetConsoleScreenBufferInfo(hStdOut, &bufInfo);
-
-	return {bufInfo.dwCursorPosition.X, bufInfo.dwCursorPosition.Y};
-
-}
-
-void Terminal::Cursor::moveTo(const Coord& coord)
-{
-  SetConsoleCursorPosition(hStdOut, {x, y});
-}
-
 void Terminal::Cursor::show()
 {
 	CONSOLE_CURSOR_INFO curInfo;
@@ -83,6 +68,44 @@ void Terminal::Cursor::hide()
 	ret = SetConsoleCursorInfo(hStdOut, &curInfo);
 	if(!ret)
     assert(false);
+}
+
+void Terminal::Cursor::moveTo(const Coord& coord)
+{
+  SetConsoleCursorPosition(hStdOut, {x, y});
+}
+
+void Terminal::Cursor::moveUp(ushort n)
+{
+	Coord pos = getCursorPosition();
+	moveTo(pos.x, pos.y - 1);
+}
+
+void Terminal::Cursor::moveDown(ushort n)
+{
+	Coord pos = getCursorPosition();
+	moveTo(pos.x, pos.y + 1);
+}
+
+void Terminal::Cursor::moveRight(ushort n)
+{
+	Coord pos = getCursorPosition();
+	moveTo(pos.x + 1, pos.y);
+}
+
+void Terminal::Cursor::moveLeft(ushort n)
+{
+	Coord pos = getCursorPosition();
+	moveTo(pos.x - 1, pos.y);
+}
+
+Coord Terminal::Cursor::getCursorPosition()
+{
+	CONSOLE_SCREEN_BUFFER_INFO bufInfo;
+
+	GetConsoleScreenBufferInfo(hStdOut, &bufInfo);
+
+	return {bufInfo.dwCursorPosition.X, bufInfo.dwCursorPosition.Y};
 }
 
 #endif // OS_WIN

@@ -15,11 +15,20 @@ public:
   class Cursor
   {
   public:
-    static void moveTo(const Coord& coord);
-
     static void show();
     static void hide();
-  };
+
+    static void moveTo(const Coord& coord);
+		static void moveUp(ushort n);
+		static void moveDown(ushort n);
+		static void moveRight(ushort n);
+		static void moveLeft(ushort n);
+  
+  private:
+#ifdef OS_WIN
+    static Coord getCursorPosition();
+#endif
+	};
 };
 
 #endif // CLEM_TERMINAL_H_
