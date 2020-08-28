@@ -16,7 +16,7 @@ class Scene
 {
 public:
 	Scene();
-	Scene(const Size& size);
+	Scene(const Rect& rect);
 
 	void update();
 	void render();
@@ -29,7 +29,7 @@ public:
 	const std::vector<Camera*>& getCameras() const;
 
 private:
-	Size                     size;
+	Rect                     rect;
 	Renderer*                renderer;
 	std::vector<Camera*>     cameras;
 	std::vector<GameObject*> objects;

@@ -9,14 +9,14 @@
 #include "common_renderer.h"
 
 Scene::Scene()
-		: Scene(Terminal::getWindowSize())
+		: Scene(Rect({0, 0}, Terminal::getWindowSize()))
 {
 }
 
-Scene::Scene(const Size& size)
-		: size(size), renderer(new CommonRenderer(size))
+Scene::Scene(const Rect& rect)
+		: rect(rect), renderer(new CommonRenderer(rect))
 {
-  addCamera(new Camera(*this, size));
+  addCamera(new Camera(*this, rect));
 }
 
 void Scene::update()

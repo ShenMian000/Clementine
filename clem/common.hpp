@@ -16,7 +16,6 @@ typedef unsigned short ushort;
   #define hStdOut GetStdHandle(STD_OUTPUT_HANDLE)
 #endif
 
-#include "coord.hpp"
-#include "size.hpp"
+#include "type.hpp"
 
 #endif // CLEM_COMMON_HPP_

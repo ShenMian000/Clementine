@@ -5,7 +5,6 @@
 #include "game_object.h"
 #include "scene.h"
 #include "component.h"
-#include "vector.hpp"
 
 GameObject::GameObject(Scene& scene, const Texture& texture)
 		: scene(scene), texture(texture)

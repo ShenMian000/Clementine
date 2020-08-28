@@ -7,18 +7,21 @@
 
 using std::string;
 
-CommonRenderer::CommonRenderer(const Size& size)
-		: size(size)
+CommonRenderer::CommonRenderer(const Rect& rect)
+		: rect(rect)
 {
 }
 
 void CommonRenderer::render()
 {
 	// Çå¿ÕÆÁÄ»
-	Terminal::Cursor::moveTo({0, 0});
-	string line(size.x, ' ');
-	for(ushort y = 0; y < size.y - 1; y++)
+	string line(rect.size().x, ' ');
+	for(ushort y = 0; y < rect.size().y - 1; y++)
+	{
+		Terminal::Cursor::moveTo({rect.leftTop.x, rect.leftTop.y + y});
 		puts(line.c_str());
+	}
+	Terminal::Cursor::moveTo({rect.leftTop.x, rect.rightBottom.y});
 	printf("%s", line.c_str());
 
 	// »æÖÆ

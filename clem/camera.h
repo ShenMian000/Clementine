@@ -15,12 +15,14 @@ class GameObject;
 class Camera
 {
 public:
-  Camera(Scene& scene, const Size& size);
+	Camera(Scene& scene, const Rect& rect);
 
   void render(Renderer& renderer, const std::vector<GameObject*>& objs);
 
+	bool inSight(const GameObject& obj) const;
+
 private:
-	Size   size;
+	Rect   rect;
 	Scene& scene;
   ushort depth;
 };

@@ -9,14 +9,27 @@
 
 using std::vector;
 
-Camera::Camera(Scene& scene, const Size& size)
-		: scene(scene), size(size)
+Camera::Camera(Scene& scene, const Rect& rect)
+		: scene(scene), rect(rect), depth(0)
 {
 }
 
 void Camera::render(Renderer& renderer, const vector<GameObject*>& objs)
 {
 	for(auto obj : objs)
-		renderer.draw(obj->getTexture(), obj->getPosition());
+		if(inSight(*obj))
+			renderer.draw(obj->getTexture(), obj->getPosition());
 	renderer.render();
+}
+
+bool Camera::inSight(const GameObject& obj) const
+{
+	auto pos = obj.getPosition();
+	if(rect.leftTop.x <= pos.x &&
+		 pos.x <= rect.rightBottom.x &&
+		 rect.leftTop.y <= pos.y &&
+		 pos.y <= rect.rightBottom.y)
+		return true;
+	else
+		return false;
 }

@@ -6,21 +6,21 @@
 #define CLEM_COMMON_RENDERER_H_
 
 #include <vector>
-#include "renderer.h"
+#include <clem/renderer.h>
 #include "common.hpp"
 #include "texture.hpp"
 
 class CommonRenderer : public Renderer
 {
 public:
-  CommonRenderer(const Size& size);
+	CommonRenderer(const Rect& rect);
 
   void render() override;
   void draw(const Texture& texture, const Coord& coord) override;
   void clear() override;
 
 private:
-  Size size;
+  Rect rect;
   struct pair
   {
     Texture texture;
