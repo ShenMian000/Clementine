@@ -9,5 +9,5 @@ script:
   - rm CMakeCache.txt
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake ../
   - make

@@ -5,6 +5,8 @@
 #include "linux_renderer.h"
 #include "terminal.h"
 
+using std::string;
+
 LinuxRenderer::LinuxRenderer(const Size& size)
 		: size(size)
 {
@@ -12,15 +14,17 @@ LinuxRenderer::LinuxRenderer(const Size& size)
 
 void LinuxRenderer::render()
 {
+	// Çå¿ÕÆÁÄ»
 	Terminal::Cursor::moveTo({0, 0});
+	string line(size.x, ' ');
 	for(ushort y = 0; y < size.y; y++)
 	{
-		for(ushort x = 0; x < size.x; x++)
-			printf(" ");
+		printf(line.c_str());
 		if(y + 1 < size.y)
 			printf("\n");
 	}
 
+	// »æÖÆ
 	for(auto record : records)
 	{
 		Terminal::Cursor::moveTo(record.coord);
