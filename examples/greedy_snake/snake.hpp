@@ -30,15 +30,20 @@ public:
 		// 身体随头部移动
 		bodys[0]->setPosition(getPosition());
 		for(size_t i = 1; i < bodys.size(); i++)
-		{
 			bodys[i]->setPosition(bodys[i + 1]->getPosition());
-		}
+	}
+
+	void isHit()
+	{
+
 	}
 
 	// 添加一节新身体
 	void addNewBody()
 	{
-		bodys.push_back(new GameObject(scene, {'#', Attr(fore::green)}));
+		auto body = new GameObject(scene, {'#', Attr(fore::green)});
+		// body->setPosition(); // bodys.back()
+		bodys.push_back(body);
 	}
 
 private:

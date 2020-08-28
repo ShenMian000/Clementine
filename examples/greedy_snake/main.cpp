@@ -11,6 +11,8 @@ int main()
 {
 	Scene scene;        // 创建场景, 默认大小和终端窗口一致
 	Snake snake(scene); // 将蛇加入场景
+	
+	
 
 	scene.render();
 
