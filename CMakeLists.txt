@@ -14,6 +14,10 @@ link_directories("D:/Program Files/Program/boost_1_73_0/stage/lib")
 # 设置 lib 输出目录
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
+if(COMPILER_SUPPORTS_CXX11)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+endif()
+
 # 将 Clementine 编译到 lib 目录
 add_subdirectory("clem")
 
