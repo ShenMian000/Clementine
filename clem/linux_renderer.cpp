@@ -7,10 +7,15 @@
 
 void LinuxRenderer::render()
 {
+  puts("\e[2j");
+  for(auto record : records)
+  {
+		Cursor::moveTo(record.coord);
+		record.texture.put();
+	}
 }
 
 void LinuxRenderer::draw(const Texture& texture, const Coord& coord)
 {
-  Cursor::moveTo(coord);
-  texture.put();
+  records.push_back({texture, coord});
 }

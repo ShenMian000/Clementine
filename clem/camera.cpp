@@ -18,4 +18,5 @@ void Camera::render(Renderer& renderer, vector<GameObject*>& objs)
 {
 	for(auto obj : objs)
 		renderer.draw(obj->getTexture(), obj->getPosition());
+	renderer.render();
 }

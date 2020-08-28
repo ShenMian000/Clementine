@@ -6,17 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/sms/Clementine/clem/attribute.cpp
-attribute.h
-/home/sms/Clementine/clem/attribute.h
-stdio.h
--
-
 /home/sms/Clementine/clem/attribute.h
 clem/common.hpp
 -
 string
 -
+
+/home/sms/Clementine/clem/camera.cpp
+camera.h
+/home/sms/Clementine/clem/camera.h
+vector
+-
+renderer.h
+/home/sms/Clementine/clem/renderer.h
+game_object.h
+/home/sms/Clementine/clem/game_object.h
+
+/home/sms/Clementine/clem/camera.h
+clem/common.hpp
+-
+vector
+-
+
+/home/sms/Clementine/clem/game_object.h
+vector
+-
+texture.hpp
+/home/sms/Clementine/clem/texture.hpp
+
+/home/sms/Clementine/clem/renderer.h
+
+/home/sms/Clementine/clem/texture.hpp
+attribute.h
+/home/sms/Clementine/clem/attribute.h
 
 clem/common.hpp
 stdio.h
