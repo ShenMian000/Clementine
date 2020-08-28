@@ -2,20 +2,50 @@
 <results version="2">
     <cppcheck version="2.1"/>
     <errors>
-        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Vector::direction&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Vector::direction&amp;#039; is not initialized in the constructor." cwe="398" sinceDate="2020/8/28">
-            <location file0="clem/game_object.cpp" file="clem\vector.hpp" line="13"/>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Attribute&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Attribute&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" sinceDate="2020/8/28">
+            <location file0="clem/attribute.cpp" file="clem\attribute.h" line="14"/>
         </error>
-        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Vector::distance&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Vector::distance&amp;#039; is not initialized in the constructor." cwe="398" sinceDate="2020/8/28">
-            <location file0="clem/game_object.cpp" file="clem\vector.hpp" line="13"/>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CommonRenderer&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CommonRenderer&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" sinceDate="2020/8/28">
+            <location file0="clem/common_renderer.cpp" file="clem\common_renderer.h" line="16"/>
         </error>
-        <error id="unsignedPositive" severity="style" msg="Unsigned expression &amp;#039;direction&amp;#039; can&amp;#039;t be negative so it is unnecessary to test it." verbose="Unsigned expression &amp;#039;direction&amp;#039; can&amp;#039;t be negative so it is unnecessary to test it." cwe="570" sinceDate="2020/8/28">
-            <location file0="clem/game_object.cpp" file="clem\vector.hpp" line="26"/>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Scene&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Scene&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" sinceDate="2020/8/28">
+            <location file0="clem/scene.cpp" file="clem\scene.h" line="19"/>
         </error>
-        <error id="noCopyConstructor" severity="warning" msg="Class &amp;#039;Scene&amp;#039; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &amp;#039;Scene&amp;#039; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" sinceDate="2020/8/28">
-            <location file0="clem/scene.cpp" file="clem\scene.cpp" line="17"/>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;addComponent&amp;#039; is never used." verbose="The function &amp;#039;addComponent&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\game_object.cpp" line="22"/>
         </error>
-        <error id="noOperatorEq" severity="warning" msg="Class &amp;#039;Scene&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &amp;#039;Scene&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" sinceDate="2020/8/28">
-            <location file0="clem/scene.cpp" file="clem\scene.cpp" line="17"/>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;getDirection&amp;#039; is never used." verbose="The function &amp;#039;getDirection&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\game_object.cpp" line="57"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;removeComponent&amp;#039; is never used." verbose="The function &amp;#039;removeComponent&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\game_object.cpp" line="27"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;setDirection&amp;#039; is never used." verbose="The function &amp;#039;setDirection&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\game_object.cpp" line="37"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;setPosition&amp;#039; is never used." verbose="The function &amp;#039;setPosition&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\game_object.cpp" line="32"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;setTexture&amp;#039; is never used." verbose="The function &amp;#039;setTexture&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\game_object.cpp" line="47"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;hide&amp;#039; is never used." verbose="The function &amp;#039;hide&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\terminal.cpp" line="68"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;moveDown&amp;#039; is never used." verbose="The function &amp;#039;moveDown&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\terminal.cpp" line="95"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;moveLeft&amp;#039; is never used." verbose="The function &amp;#039;moveLeft&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\terminal.cpp" line="107"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;moveRight&amp;#039; is never used." verbose="The function &amp;#039;moveRight&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\terminal.cpp" line="101"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;moveUp&amp;#039; is never used." verbose="The function &amp;#039;moveUp&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\terminal.cpp" line="89"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;show&amp;#039; is never used." verbose="The function &amp;#039;show&amp;#039; is never used." cwe="561" sinceDate="2020/8/28">
+            <location file="clem\terminal.cpp" line="52"/>
         </error>
     </errors>
 </results>

@@ -19,6 +19,5 @@ int main()
 
 	scene.render();
 
-	getchar();
 	return 0;
 }

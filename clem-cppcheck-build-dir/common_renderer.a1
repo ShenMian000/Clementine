@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo checksum="2819505882">
+<analyzerinfo checksum="3102073155">
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="clem\common_renderer.cpp" file="clem\attribute.h" line="14" column="2"/>
             <symbol>Attribute</symbol>
@@ -10,14 +10,14 @@
         </error>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="render" lineNumber="15"/>
-    <functiondecl functionName="draw" lineNumber="37"/>
-    <functiondecl functionName="clear" lineNumber="42"/>
+    <functiondecl functionName="draw" lineNumber="34"/>
+    <functiondecl functionName="clear" lineNumber="39"/>
     <functiondecl functionName="render" lineNumber="15"/>
-    <functiondecl functionName="draw" lineNumber="37"/>
-    <functiondecl functionName="clear" lineNumber="42"/>
+    <functiondecl functionName="draw" lineNumber="34"/>
+    <functiondecl functionName="clear" lineNumber="39"/>
     <functiondecl functionName="render" lineNumber="15"/>
-    <functiondecl functionName="draw" lineNumber="37"/>
-    <functiondecl functionName="clear" lineNumber="42"/>
+    <functiondecl functionName="draw" lineNumber="34"/>
+    <functiondecl functionName="clear" lineNumber="39"/>
     <functioncall functionName="CommonRenderer"/>
     <functioncall functionName="Coord"/>
     <functioncall functionName="Size"/>
@@ -31,7 +31,6 @@
     <functioncall functionName="dec"/>
     <functioncall functionName="fabs"/>
     <functioncall functionName="for"/>
-    <functioncall functionName="if"/>
     <functioncall functionName="line"/>
     <functioncall functionName="moveTo"/>
     <functioncall functionName="override"/>
@@ -41,6 +40,7 @@
     <functioncall functionName="put"/>
     <functioncall functionName="putc"/>
     <functioncall functionName="putchar"/>
+    <functioncall functionName="puts"/>
     <functioncall functionName="records"/>
     <functioncall functionName="size"/>
     <functioncall functionName="sqrt"/>

@@ -1,31 +1,36 @@
 <?xml version="1.0"?>
-<analyzerinfo checksum="3686336032">
+<analyzerinfo checksum="924725534">
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="getWindowSize" lineNumber="13"/>
     <functiondecl functionName="moveTo" lineNumber="20"/>
     <functiondecl functionName="show" lineNumber="25"/>
     <functiondecl functionName="hide" lineNumber="30"/>
-    <functiondecl functionName="show" lineNumber="41"/>
-    <functiondecl functionName="hide" lineNumber="57"/>
-    <functiondecl functionName="moveTo" lineNumber="73"/>
-    <functiondecl functionName="moveUp" lineNumber="78"/>
-    <functiondecl functionName="moveDown" lineNumber="84"/>
-    <functiondecl functionName="moveRight" lineNumber="90"/>
-    <functiondecl functionName="moveLeft" lineNumber="96"/>
-    <functiondecl functionName="getCursorPosition" lineNumber="102"/>
+    <functiondecl functionName="getWindowSize" lineNumber="41"/>
+    <functiondecl functionName="show" lineNumber="52"/>
+    <functiondecl functionName="hide" lineNumber="68"/>
+    <functiondecl functionName="moveTo" lineNumber="84"/>
+    <functiondecl functionName="moveUp" lineNumber="89"/>
+    <functiondecl functionName="moveDown" lineNumber="95"/>
+    <functiondecl functionName="moveRight" lineNumber="101"/>
+    <functiondecl functionName="moveLeft" lineNumber="107"/>
+    <functiondecl functionName="getCursorPosition" lineNumber="113"/>
+    <functioncall functionName="Bottom"/>
+    <functioncall functionName="Coord"/>
     <functioncall functionName="FALSE"/>
     <functioncall functionName="GetConsoleCursorInfo"/>
     <functioncall functionName="GetConsoleScreenBufferInfo"/>
+    <functioncall functionName="Right"/>
     <functioncall functionName="STDIN_FILENO"/>
     <functioncall functionName="SetConsoleCursorInfo"/>
     <functioncall functionName="SetConsoleCursorPosition"/>
+    <functioncall functionName="Size"/>
     <functioncall functionName="TIOCGWINSZ"/>
     <functioncall functionName="TRUE"/>
     <functioncall functionName="X"/>
     <functioncall functionName="Y"/>
     <functioncall functionName="assert"/>
     <functioncall functionName="bufInfo"/>
-    <functioncall functionName="curInfo"/>
+    <functioncall functionName="cursorInfo"/>
     <functioncall functionName="false"/>
     <functioncall functionName="getCursorPosition"/>
     <functioncall functionName="hStdOut"/>
@@ -35,6 +40,8 @@
     <functioncall functionName="printf"/>
     <functioncall functionName="private:"/>
     <functioncall functionName="ret"/>
+    <functioncall functionName="screenInfo"/>
+    <functioncall functionName="short"/>
     <functioncall functionName="ushort"/>
     <functioncall functionName="winSize"/>
     <functioncall functionName="ws_col"/>
