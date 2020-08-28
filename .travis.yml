@@ -6,6 +6,7 @@ os:
   - linux
   - osx
 script:
+  - rm build/CMakeCache.txt
   - cmake -E make_directory /home/travis/build/ShenMian/Clementine
   - cd build
   - cmake .
