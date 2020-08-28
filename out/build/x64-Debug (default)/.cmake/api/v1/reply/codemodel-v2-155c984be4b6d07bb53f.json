@@ -13,7 +13,7 @@
 					],
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.5"
 					},
 					"projectIndex" : 0,
 					"source" : "."
@@ -22,7 +22,7 @@
 					"build" : "clem",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.5"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -40,7 +40,7 @@
 					],
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.5"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -50,7 +50,7 @@
 					"build" : "examples/greedy_snake",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.5"
 					},
 					"parentIndex" : 2,
 					"projectIndex" : 0,
