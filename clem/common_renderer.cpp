@@ -1,8 +1,8 @@
 // Copyright 2020 SMS
 // License(Apache-2.0)
-// ¼òÒ×äÖÈ¾Æ÷
+// Í¨ÓÃäÖÈ¾Æ÷
 
-#include "linux_renderer.h"
+#include "common_renderer.h"
 #include "terminal.h"
 
 using std::string;

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3686336032">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getWindowSize" lineNumber="13"/>
+    <functiondecl functionName="moveTo" lineNumber="20"/>
+    <functiondecl functionName="show" lineNumber="25"/>
+    <functiondecl functionName="hide" lineNumber="30"/>
+    <functiondecl functionName="show" lineNumber="41"/>
+    <functiondecl functionName="hide" lineNumber="57"/>
+    <functiondecl functionName="moveTo" lineNumber="73"/>
+    <functiondecl functionName="moveUp" lineNumber="78"/>
+    <functiondecl functionName="moveDown" lineNumber="84"/>
+    <functiondecl functionName="moveRight" lineNumber="90"/>
+    <functiondecl functionName="moveLeft" lineNumber="96"/>
+    <functiondecl functionName="getCursorPosition" lineNumber="102"/>
+    <functioncall functionName="FALSE"/>
+    <functioncall functionName="GetConsoleCursorInfo"/>
+    <functioncall functionName="GetConsoleScreenBufferInfo"/>
+    <functioncall functionName="STDIN_FILENO"/>
+    <functioncall functionName="SetConsoleCursorInfo"/>
+    <functioncall functionName="SetConsoleCursorPosition"/>
+    <functioncall functionName="TIOCGWINSZ"/>
+    <functioncall functionName="TRUE"/>
+    <functioncall functionName="X"/>
+    <functioncall functionName="Y"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="bufInfo"/>
+    <functioncall functionName="curInfo"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="getCursorPosition"/>
+    <functioncall functionName="hStdOut"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="ioctl"/>
+    <functioncall functionName="moveTo"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="private:"/>
+    <functioncall functionName="ret"/>
+    <functioncall functionName="ushort"/>
+    <functioncall functionName="winSize"/>
+    <functioncall functionName="ws_col"/>
+    <functioncall functionName="ws_row"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

@@ -14,7 +14,7 @@ Camera::Camera(Scene& scene, const Size& size)
 {
 }
 
-void Camera::render(Renderer& renderer, vector<GameObject*>& objs)
+void Camera::render(Renderer& renderer, const vector<GameObject*>& objs)
 {
 	for(auto obj : objs)
 		renderer.draw(obj->getTexture(), obj->getPosition());

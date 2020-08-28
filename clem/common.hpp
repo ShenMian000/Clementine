@@ -12,6 +12,7 @@ typedef unsigned short ushort;
 #include "os.hpp"
 
 #ifdef OS_WIN
+  #include <windows.h>
   #define hStdOut GetStdHandle(STD_OUTPUT_HANDLE)
 #endif
 

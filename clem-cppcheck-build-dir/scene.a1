@@ -1,49 +1,65 @@
 <?xml version="1.0"?>
-<analyzerinfo checksum="3421674511">
-        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="clem\scene.cpp" file="clem\attribute.h" line="18" column="2"/>
-            <symbol>Attribute</symbol>
-        </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="clem\scene.cpp" file="clem\attribute.h" line="19" column="2"/>
-            <symbol>Attribute</symbol>
-        </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="clem\scene.cpp" file="clem\scene.h" line="18" column="2"/>
+<analyzerinfo checksum="3350820731">
+        <error id="noCopyConstructor" severity="warning" msg="Class &apos;Scene&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;Scene&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\scene.cpp" line="17" column="17"/>
             <symbol>Scene</symbol>
         </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &apos;Scene&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &apos;Scene&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\scene.cpp" line="17" column="17"/>
+            <symbol>Scene</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Scene&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\scene.h" line="19" column="2"/>
+            <symbol>Scene</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Attribute&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\attribute.h" line="14" column="2"/>
+            <symbol>Attribute</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CommonRenderer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CommonRenderer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="clem\scene.cpp" file="clem\common_renderer.h" line="16" column="3"/>
+            <symbol>CommonRenderer</symbol>
+        </error>
   <FileInfo check="CheckUnusedFunctions">
-    <functiondecl functionName="print" lineNumber="30"/>
-    <functiondecl functionName="print" lineNumber="35"/>
-    <functiondecl functionName="write" lineNumber="45"/>
-    <functiondecl functionName="resize" lineNumber="54"/>
-    <functiondecl functionName="resize" lineNumber="60"/>
-    <functioncall functionName="Attribute"/>
-    <functioncall functionName="GetStdHandle"/>
+    <functiondecl functionName="update" lineNumber="22"/>
+    <functiondecl functionName="render" lineNumber="28"/>
+    <functiondecl functionName="addObject" lineNumber="35"/>
+    <functiondecl functionName="addCamera" lineNumber="41"/>
+    <functiondecl functionName="update" lineNumber="22"/>
+    <functiondecl functionName="render" lineNumber="28"/>
+    <functiondecl functionName="addObject" lineNumber="35"/>
+    <functiondecl functionName="addCamera" lineNumber="41"/>
+    <functiondecl functionName="update" lineNumber="22"/>
+    <functiondecl functionName="render" lineNumber="28"/>
+    <functiondecl functionName="addObject" lineNumber="35"/>
+    <functiondecl functionName="addCamera" lineNumber="41"/>
+    <functioncall functionName="Camera"/>
+    <functioncall functionName="Coord"/>
     <functioncall functionName="Scene"/>
+    <functioncall functionName="Size"/>
     <functioncall functionName="Texture"/>
-    <functioncall functionName="WriteConsoleOutputA"/>
-    <functioncall functionName="assert"/>
+    <functioncall functionName="addCamera"/>
     <functioncall functionName="attr"/>
-    <functioncall functionName="bool"/>
-    <functioncall functionName="bufferCoord"/>
-    <functioncall functionName="bufferSize"/>
+    <functioncall functionName="cam"/>
+    <functioncall functionName="cameras"/>
     <functioncall functionName="ch"/>
+    <functioncall functionName="clear"/>
     <functioncall functionName="const"/>
-    <functioncall functionName="data"/>
-    <functioncall functionName="false"/>
-    <functioncall functionName="getAttribute"/>
-    <functioncall functionName="hStdOut"/>
-    <functioncall functionName="i"/>
-    <functioncall functionName="if"/>
-    <functioncall functionName="none"/>
-    <functioncall functionName="print"/>
-    <functioncall functionName="rect"/>
-    <functioncall functionName="resize"/>
-    <functioncall functionName="ret"/>
+    <functioncall functionName="dec"/>
+    <functioncall functionName="fabs"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="getWindowSize"/>
+    <functioncall functionName="obj"/>
+    <functioncall functionName="objects"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="private:"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="putc"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="renderer"/>
     <functioncall functionName="size"/>
-    <functioncall functionName="texture"/>
-    <functioncall functionName="true"/>
+    <functioncall functionName="sqrt"/>
+    <functioncall functionName="update"/>
     <functioncall functionName="x"/>
     <functioncall functionName="y"/>
   </FileInfo>

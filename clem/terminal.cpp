@@ -4,11 +4,11 @@
 
 #include "terminal.h"
 
+#ifdef OS_LINUX
+
 #include <termios.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-
-#ifdef OS_LINUX
 
 Size Terminal::getWindowSize()
 {
@@ -38,65 +38,76 @@ void Terminal::Cursor::hide()
 
 #include <windows.h>
 
+Size Terminal::getWindowSize()
+{
+	CONSOLE_SCREEN_BUFFER_INFO screenInfo;
+	
+	auto ret = GetConsoleScreenBufferInfo(hStdOut, &screenInfo);
+	if(!ret)
+		assert(false);
+
+	return Size(screenInfo.srWindow.Right, screenInfo.srWindow.Bottom);
+}
+
 void Terminal::Cursor::show()
 {
-	CONSOLE_CURSOR_INFO curInfo;
+	CONSOLE_CURSOR_INFO cursorInfo;
 	bool                ret;
 
-	ret = GetConsoleCursorInfo(hStdOut, &curInfo);
+	ret = GetConsoleCursorInfo(hStdOut, &cursorInfo);
 	if(!ret)
     assert(false);
 
-	curInfo.bVisible = TRUE;
+	cursorInfo.bVisible = TRUE;
 
-	ret = SetConsoleCursorInfo(hStdOut, &curInfo);
+	ret = SetConsoleCursorInfo(hStdOut, &cursorInfo);
 	if(!ret)
     assert(false);
 }
 
 void Terminal::Cursor::hide()
 {
-	CONSOLE_CURSOR_INFO curInfo;
+	CONSOLE_CURSOR_INFO cursorInfo;
 	bool                ret;
 
-	ret = GetConsoleCursorInfo(hStdOut, &curInfo);
+	ret = GetConsoleCursorInfo(hStdOut, &cursorInfo);
 	if(!ret)
     assert(false);
 
-	curInfo.bVisible = FALSE;
+	cursorInfo.bVisible = FALSE;
 
-	ret = SetConsoleCursorInfo(hStdOut, &curInfo);
+	ret = SetConsoleCursorInfo(hStdOut, &cursorInfo);
 	if(!ret)
     assert(false);
 }
 
 void Terminal::Cursor::moveTo(const Coord& coord)
 {
-  SetConsoleCursorPosition(hStdOut, {x, y});
+	SetConsoleCursorPosition(hStdOut, {(short)coord.x, (short)coord.y});
 }
 
 void Terminal::Cursor::moveUp(ushort n)
 {
 	Coord pos = getCursorPosition();
-	moveTo(pos.x, pos.y - 1);
+	moveTo({pos.x, pos.y - 1});
 }
 
 void Terminal::Cursor::moveDown(ushort n)
 {
 	Coord pos = getCursorPosition();
-	moveTo(pos.x, pos.y + 1);
+	moveTo({pos.x, pos.y + 1});
 }
 
 void Terminal::Cursor::moveRight(ushort n)
 {
 	Coord pos = getCursorPosition();
-	moveTo(pos.x + 1, pos.y);
+	moveTo({pos.x + 1, pos.y});
 }
 
 void Terminal::Cursor::moveLeft(ushort n)
 {
 	Coord pos = getCursorPosition();
-	moveTo(pos.x - 1, pos.y);
+	moveTo({pos.x - 1, pos.y});
 }
 
 Coord Terminal::Cursor::getCursorPosition()
@@ -105,7 +116,7 @@ Coord Terminal::Cursor::getCursorPosition()
 
 	GetConsoleScreenBufferInfo(hStdOut, &bufInfo);
 
-	return {bufInfo.dwCursorPosition.X, bufInfo.dwCursorPosition.Y};
+	return Coord(bufInfo.dwCursorPosition.X, bufInfo.dwCursorPosition.Y);
 }
 
 #endif // OS_WIN

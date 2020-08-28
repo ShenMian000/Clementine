@@ -159,7 +159,7 @@ Attribute::Attribute(ushort attr)
 
 	defaultAttr = bufInfo.wAttributes;
 
-	compile();
+	complie(attr);
 }
 
 void Attribute::on() const
@@ -171,14 +171,18 @@ void Attribute::off() const
 {
 	SetConsoleTextAttribute(hStdOut, defaultAttr);
 }
+
 void Attribute::complie(ushort attr)
 {
 	ushort fore = attr & 0x000f;
 	ushort back = attr & 0x00f0;
 	ushort mode = attr & 0x0f00;
 
-	attribute |= fore + 1;
-	attribute |= back + 1;
+	attribute = 0x0000;
+	if(fore != 0)
+		attribute |= fore - 1;
+	if(back != 0)
+		attribute |= back - 1;
 
 	switch(mode)
 	{

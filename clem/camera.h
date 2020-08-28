@@ -17,7 +17,7 @@ class Camera
 public:
   Camera(Scene& scene, const Size& size);
 
-  void render(Renderer& renderer, std::vector<GameObject*>& objs);
+  void render(Renderer& renderer, const std::vector<GameObject*>& objs);
 
 private:
 	Size   size;

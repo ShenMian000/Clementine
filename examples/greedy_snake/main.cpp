@@ -4,7 +4,6 @@
 
 #include <clem/clem.hpp>
 #include "snake.hpp"
-#include <unistd.h>
 
 using Attr = Attribute;
 
@@ -18,12 +17,7 @@ int main()
 
 	snake.setPosition(Coord(winSize.x / 2, winSize.y / 2)); // 将 蛇 的位置设置到场景中央
 
-	while(true)
-	{
-		scene.render();
-
-		usleep(16000);
-	}
+	scene.render();
 
 	getchar();
 	return 0;

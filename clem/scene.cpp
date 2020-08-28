@@ -6,8 +6,7 @@
 #include "terminal.h"
 #include "game_object.h"
 #include "camera.h"
-
-#include "linux_renderer.h"
+#include "common_renderer.h"
 
 Scene::Scene()
 		: Scene(Terminal::getWindowSize())
@@ -15,7 +14,7 @@ Scene::Scene()
 }
 
 Scene::Scene(const Size& size)
-		: size(size), renderer(new LinuxRenderer(size))
+		: size(size), renderer(new CommonRenderer(size))
 {
   addCamera(new Camera(*this, size));
 }

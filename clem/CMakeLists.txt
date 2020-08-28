@@ -12,4 +12,4 @@ file(GLOB sources "*.cpp")
 
 # 创建 lib 库
 add_library(clementine STATIC ${sources})
-target_link_libraries(clementine ncurses)
+target_link_libraries(clementine)
