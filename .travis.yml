@@ -5,8 +5,9 @@ compiler:
 os:
   - linux
   - osx
+  - windows
 script:
-  - rm build/CMakeCache.txt
-  - cmake -E make_directory /home/travis/build/ShenMian/Clementine
+  - cd build
+  - rm CMakeCache.txt
   - cmake .
   - cmake --build .
