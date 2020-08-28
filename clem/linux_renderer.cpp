@@ -7,12 +7,12 @@
 
 using std::string;
 
-LinuxRenderer::LinuxRenderer(const Size& size)
+CommonRenderer::CommonRenderer(const Size& size)
 		: size(size)
 {
 }
 
-void LinuxRenderer::render()
+void CommonRenderer::render()
 {
 	// Çå¿ÕÆÁÄ»
 	Terminal::Cursor::moveTo({0, 0});
@@ -34,12 +34,12 @@ void LinuxRenderer::render()
 	putchar('\n'); // Ë¢ÐÂ»º³åÇø
 }
 
-void LinuxRenderer::draw(const Texture& texture, const Coord& coord)
+void CommonRenderer::draw(const Texture& texture, const Coord& coord)
 {
 	records.push_back({texture, coord});
 }
 
-void LinuxRenderer::clear()
+void CommonRenderer::clear()
 {
 	records.clear();
 }

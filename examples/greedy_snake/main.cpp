@@ -21,7 +21,7 @@ int main()
 	while(true)
 	{
 		scene.render();
-		
+
 		usleep(16000);
 	}
 

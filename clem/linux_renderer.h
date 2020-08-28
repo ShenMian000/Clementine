@@ -2,18 +2,18 @@
 // License(Apache-2.0)
 // LinuxäÖÈ¾Æ÷
 
-#ifndef CLEM_LINUX_RENDERER_H_
-#define CLEM_LINUX_RENDERER_H_
+#ifndef CLEM_COMMON_RENDERER_H_
+#define CLEM_COMMON_RENDERER_H_
 
 #include <vector>
 #include "renderer.h"
 #include "common.hpp"
 #include "texture.hpp"
 
-class LinuxRenderer : public Renderer
+class CommonRenderer : public Renderer
 {
 public:
-  LinuxRenderer(const Size& size);
+  CommonRenderer(const Size& size);
 
   void render() override;
   void draw(const Texture& texture, const Coord& coord) override;
@@ -29,4 +29,4 @@ private:
   std::vector<pair> records;
 };
 
-#endif // CLEM_LINUX_RENDERER_H_
+#endif // CLEM_COMMON_RENDERER_H_
