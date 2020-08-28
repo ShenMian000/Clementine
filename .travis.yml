@@ -2,10 +2,17 @@ language: cpp
 compiler:
   - gcc
   - clang
-os:
-  - linux
-  - osx
-  - windows
+include:
+  - os: linux
+    arch: amd64
+  - os: linux
+    arch: arm64
+  - os: linux
+    arch: ppc64le
+  - os: linux
+    arch: s390x
+  - os: osx
+  - os: windows
 script:
   - cd build
   - rm CMakeCache.txt
