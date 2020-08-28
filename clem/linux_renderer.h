@@ -13,10 +13,14 @@
 class LinuxRenderer : public Renderer
 {
 public:
+  LinuxRenderer(const Size& size);
+
   void render() override;
   void draw(const Texture& texture, const Coord& coord) override;
+  void clear() override;
 
 private:
+  Size size;
   struct pair
   {
     Texture texture;

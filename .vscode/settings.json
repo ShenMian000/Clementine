@@ -1,6 +1,10 @@
 {
   "files.associations": {
     "vector": "cpp",
-    "system_error": "cpp"
+    "system_error": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "string": "cpp",
+    "cmath": "cpp"
   }
 }

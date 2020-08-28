@@ -15,7 +15,7 @@ Scene::Scene()
 }
 
 Scene::Scene(const Size& size)
-		: size(size), renderer(new LinuxRenderer())
+		: size(size), renderer(new LinuxRenderer(size))
 {
   addCamera(new Camera(*this, size));
 }
@@ -30,6 +30,7 @@ void Scene::render()
 {
   for(auto cam : cameras)
     cam->render(*renderer, objects);
+  renderer->clear();
 }
 
 void Scene::addObject(GameObject* obj)

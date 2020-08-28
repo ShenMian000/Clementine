@@ -16,8 +16,9 @@ struct Coord
 	// 返回两点间直线距离
 	float distanceTo(const Coord& coord)
 	{
-		Coord dec = {fabs(x - coord.x), fabs(y - coord.y)};
-		return sqrt(dec.x * dec.x + dec.y * dec.y);
+		auto sumX = fabs(x - coord.x);
+		auto sumY = fabs(y - coord.y);
+		return sqrt(sumX * sumX + sumY * sumY);
 	}
 
 	float x;
