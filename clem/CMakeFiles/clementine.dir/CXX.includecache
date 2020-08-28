@@ -6,12 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/home/sms/Clementine/clem/cursor.cpp
-cursor.h
-/home/sms/Clementine/clem/cursor.h
+/home/sms/Clementine/clem/attribute.cpp
+attribute.h
+/home/sms/Clementine/clem/attribute.h
+stdio.h
+-
 
-/home/sms/Clementine/clem/cursor.h
+/home/sms/Clementine/clem/attribute.h
 clem/common.hpp
+-
+string
 -
 
 clem/common.hpp

@@ -9,12 +9,15 @@ using Attr = Attribute;
 
 int main()
 {
-	Scene scene;        // 创建场景, 默认大小和终端窗口一致
-	Snake snake(scene); // 将蛇加入场景
-	
-	
+	Cursor::hide();     // 隐藏光标
+	Scene scene;        // 创建场景, 默认大小和终端窗口大小一致
+	Snake snake(scene); // 将 蛇 加入场景
+
+	auto winSize = Terminal::getWinSize();             // 获取终端窗口大小
+	snake.setPosition({winSize.x / 2, winSize.y / 2}); // 将 蛇 的位置设置到场景中央
 
 	scene.render();
 
+	getchar();
 	return 0;
 }

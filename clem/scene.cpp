@@ -17,7 +17,7 @@ Scene::Scene()
 Scene::Scene(const Size& size)
 		: size(size), renderer(new LinuxRenderer())
 {
-  addCamera(new Camera(*this));
+  addCamera(new Camera(*this, size));
 }
 
 void Scene::update()

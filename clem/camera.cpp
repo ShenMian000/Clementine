@@ -9,8 +9,8 @@
 
 using std::vector;
 
-Camera::Camera(Scene& scene)
-		: scene(scene)
+Camera::Camera(Scene& scene, const Size& size)
+		: scene(scene), size(size)
 {
 }
 

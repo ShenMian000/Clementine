@@ -16,7 +16,7 @@ public:
 	Snake(Scene& scene)
 			: scene(scene), GameObject(scene, {'@', Attr(fore::green)})
 	{
-		addNewBody(); // 使 Snake 的默认长度为 2
+		// addNewBody(); // 使 Snake 的默认长度为 2
 	}
 
 	~Snake()

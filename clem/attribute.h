@@ -23,8 +23,6 @@ public:
 private:
 	void complie(ushort attr);
 
-	ushort attr;
-
 	std::string attribute;
 };
 
@@ -32,16 +30,15 @@ namespace fore
 {
 	enum
 	{
-		black  = 0x0000,
-		blue   = 0x0001,
-		green  = 0x0002,
-		cyan   = 0x0003,
-		aqua   = 0x0003,
-		red    = 0x0004,
-		purple = 0x0005,
-		yellow = 0x0006,
-		white  = 0x0007,
-		size
+		black  = 0x0001,
+		blue   = 0x0002,
+		green  = 0x0003,
+		cyan   = 0x0004,
+		aqua   = 0x0004,
+		red    = 0x0005,
+		purple = 0x0006,
+		yellow = 0x0007,
+		white  = 0x0008
 	};
 }
 
@@ -49,16 +46,15 @@ namespace back
 {
 	enum
 	{
-		black  = 0x0000,
-		blue   = 0x0010,
-		green  = 0x0020,
-		cyan   = 0x0030,
-		aqua   = 0x0030,
-		red    = 0x0040,
-		purple = 0x0050,
-		yellow = 0x0060,
-		white  = 0x0070,
-		size
+		black  = 0x0010,
+		blue   = 0x0020,
+		green  = 0x0030,
+		cyan   = 0x0040,
+		aqua   = 0x0040,
+		red    = 0x0050,
+		purple = 0x0060,
+		yellow = 0x0070,
+		white  = 0x0080
 	};
 }
 

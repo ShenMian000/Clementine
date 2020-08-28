@@ -6,5 +6,15 @@
 
 void Cursor::moveTo(const Coord& coord)
 {
-	printf("\e[%u;%uH", (ushort)coord.x, (ushort)coord.y);
+	printf("\e[%u;%uH", (ushort)coord.y, (ushort)coord.x);
+}
+
+void Cursor::show()
+{
+	printf("\e[?25h");
+}
+
+void Cursor::hide()
+{
+	printf("\e[?25l");
 }

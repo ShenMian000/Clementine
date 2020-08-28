@@ -15,7 +15,7 @@ class GameObject;
 class Camera
 {
 public:
-  Camera(Scene&);
+  Camera(Scene& scene, const Size& size);
 
   void render(Renderer& renderer, std::vector<GameObject*>& objs);
 
