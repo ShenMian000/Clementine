@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.18.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "clem/CMakeLists.txt"
+  "examples/CMakeLists.txt"
+  "examples/greedy_snake/CMakeLists.txt"
   "/usr/share/cmake-3.18/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -43,10 +45,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "clem/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/greedy_snake/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "clem/CMakeFiles/main.dir/DependInfo.cmake"
   "clem/CMakeFiles/clementine.dir/DependInfo.cmake"
+  "examples/greedy_snake/CMakeFiles/greedy_snake.dir/DependInfo.cmake"
   )

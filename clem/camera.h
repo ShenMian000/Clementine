@@ -6,15 +6,18 @@
 #define CLEM_CAMERA_H_
 
 #include <clem/common.hpp>
+#include <vector>
 
 class Scene;
+class Renderer;
+class GameObject;
 
 class Camera
 {
 public:
   Camera(Scene&);
 
-  void render();
+  void render(Renderer& renderer, std::vector<GameObject*>& objs);
 
 private:
 	Size   size;

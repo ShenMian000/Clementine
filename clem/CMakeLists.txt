@@ -2,7 +2,6 @@
 # License(Apache-2.0)
 
 # 添加 源文件
-
 file(GLOB sources "*.cpp")
 
 # if(CMAKE_SYSTEM_NAME MATCHES "Windows")
@@ -13,7 +12,4 @@ file(GLOB sources "*.cpp")
 
 # 创建 lib 库
 add_library(clementine STATIC ${sources})
-
-# 创建 可执行文件
-add_executable(main main.cpp)
-target_link_libraries(main clementine)
+target_link_libraries(clementine ncurses)

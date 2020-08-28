@@ -10,29 +10,15 @@
 class Cursor
 {
 public:
-	static Cursor& getInstance();
+	static void moveTo(const Coord& coord);
 
-	void moveTo(short, short);
+	static void moveUp(ushort);
+	static void moveDown(ushort);
+	static void moveRight(ushort);
+	static void moveLeft(ushort);
 
-	void moveUp(short);
-	void moveDown(short);
-	void moveRight(short);
-	void moveLeft(short);
-
-	void show();
-	void hide();
-
-private:
-	Cursor();
-
-	short getX() const;
-	short getY() const;
-
-	static Cursor* instance;
-
-	#ifdef OS_WIN
-	void* hStdOut;
-	#endif // OS_WIN
+	static void show();
+	static void hide();
 };
 
 #endif // CLEM_CURSOR_H_

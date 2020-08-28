@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/sms/Clementine/clem/camera.cpp
-camera.h
-/home/sms/Clementine/clem/camera.h
+/home/sms/Clementine/clem/cursor.cpp
+cursor.h
+/home/sms/Clementine/clem/cursor.h
 
-/home/sms/Clementine/clem/camera.h
+/home/sms/Clementine/clem/cursor.h
 clem/common.hpp
 -
 

@@ -6,8 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/clementine.dir/cursor.cpp.o"
   "CMakeFiles/clementine.dir/game_object.cpp.o"
   "CMakeFiles/clementine.dir/input_component.cpp.o"
-  "CMakeFiles/clementine.dir/main.cpp.o"
+  "CMakeFiles/clementine.dir/linux_renderer.cpp.o"
   "CMakeFiles/clementine.dir/scene.cpp.o"
+  "CMakeFiles/clementine.dir/terminal.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

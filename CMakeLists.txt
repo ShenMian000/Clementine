@@ -1,6 +1,6 @@
-﻿# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
-#
+﻿# Copyright 2020 SMS
+# License(Apache-2.0)
+
 cmake_minimum_required(VERSION 3.8)
 
 project("Clementine")
@@ -14,8 +14,9 @@ link_directories("D:/Program Files/Program/boost_1_73_0/stage/lib")
 # 设置 lib 输出目录
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
+# 将 Clementine 编译到 lib 目录
 add_subdirectory("clem")
 
+# 包含 其他子项目
 link_directories("lib")
-
-# add_subdirectory("examples")
+add_subdirectory("examples")

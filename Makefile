@@ -130,19 +130,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f clem/CMakeFiles/main.dir/build.make clem/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
 # Target rules for targets named clementine
 
 # Build rule for target.
@@ -155,6 +142,19 @@ clementine/fast:
 	$(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/build
 .PHONY : clementine/fast
 
+#=============================================================================
+# Target rules for targets named greedy_snake
+
+# Build rule for target.
+greedy_snake: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 greedy_snake
+.PHONY : greedy_snake
+
+# fast build rule for target.
+greedy_snake/fast:
+	$(MAKE) $(MAKESILENT) -f examples/greedy_snake/CMakeFiles/greedy_snake.dir/build.make examples/greedy_snake/CMakeFiles/greedy_snake.dir/build
+.PHONY : greedy_snake/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,7 +164,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... clementine"
-	@echo "... main"
+	@echo "... greedy_snake"
 .PHONY : help
 
 

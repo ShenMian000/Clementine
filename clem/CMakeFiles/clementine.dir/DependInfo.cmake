@@ -9,8 +9,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sms/Clementine/clem/cursor.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/cursor.cpp.o"
   "/home/sms/Clementine/clem/game_object.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/game_object.cpp.o"
   "/home/sms/Clementine/clem/input_component.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/input_component.cpp.o"
-  "/home/sms/Clementine/clem/main.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/main.cpp.o"
+  "/home/sms/Clementine/clem/linux_renderer.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/linux_renderer.cpp.o"
   "/home/sms/Clementine/clem/scene.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/scene.cpp.o"
+  "/home/sms/Clementine/clem/terminal.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/terminal.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

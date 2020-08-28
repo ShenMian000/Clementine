@@ -3,8 +3,17 @@
 
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o
  /home/sms/Clementine/examples/greedy_snake/main.cpp
+ /home/sms/Clementine/examples/greedy_snake/snake.hpp
  clem/attribute.h
+ clem/camera.h
+ clem/clem.hpp
  clem/common.hpp
  clem/coord.hpp
+ clem/cursor.h
+ clem/game_object.h
  clem/os.hpp
+ clem/renderer.h
+ clem/scene.h
  clem/size.hpp
+ clem/terminal.h
+ clem/texture.hpp

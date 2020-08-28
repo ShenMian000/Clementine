@@ -9,6 +9,7 @@
 #include <clem/attribute.h>
 #include <clem/cursor.h>
 
+#include <clem/terminal.h>
 #include <clem/scene.h>
 #include <clem/camera.h>
 #include <clem/game_object.h>

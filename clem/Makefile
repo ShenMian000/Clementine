@@ -130,21 +130,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-clem/CMakeFiles/main.dir/rule:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clem/CMakeFiles/main.dir/rule
-.PHONY : clem/CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: clem/CMakeFiles/main.dir/rule
-
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/main.dir/build.make clem/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-# Convenience name for target.
 clem/CMakeFiles/clementine.dir/rule:
 	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clem/CMakeFiles/clementine.dir/rule
 .PHONY : clem/CMakeFiles/clementine.dir/rule
@@ -294,35 +279,32 @@ input_component.cpp.s:
 	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input_component.cpp.s
 .PHONY : input_component.cpp.s
 
-main.o: main.cpp.o
+linux_renderer.o: linux_renderer.cpp.o
 
-.PHONY : main.o
+.PHONY : linux_renderer.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/main.dir/build.make clem/CMakeFiles/main.dir/main.cpp.o
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/main.cpp.o
-.PHONY : main.cpp.o
+linux_renderer.cpp.o:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/linux_renderer.cpp.o
+.PHONY : linux_renderer.cpp.o
 
-main.i: main.cpp.i
+linux_renderer.i: linux_renderer.cpp.i
 
-.PHONY : main.i
+.PHONY : linux_renderer.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/main.dir/build.make clem/CMakeFiles/main.dir/main.cpp.i
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/main.cpp.i
-.PHONY : main.cpp.i
+linux_renderer.cpp.i:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/linux_renderer.cpp.i
+.PHONY : linux_renderer.cpp.i
 
-main.s: main.cpp.s
+linux_renderer.s: linux_renderer.cpp.s
 
-.PHONY : main.s
+.PHONY : linux_renderer.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/main.dir/build.make clem/CMakeFiles/main.dir/main.cpp.s
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/main.cpp.s
-.PHONY : main.cpp.s
+linux_renderer.cpp.s:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/linux_renderer.cpp.s
+.PHONY : linux_renderer.cpp.s
 
 scene.o: scene.cpp.o
 
@@ -351,6 +333,33 @@ scene.cpp.s:
 	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/scene.cpp.s
 .PHONY : scene.cpp.s
 
+terminal.o: terminal.cpp.o
+
+.PHONY : terminal.o
+
+# target to build an object file
+terminal.cpp.o:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/terminal.cpp.o
+.PHONY : terminal.cpp.o
+
+terminal.i: terminal.cpp.i
+
+.PHONY : terminal.i
+
+# target to preprocess a source file
+terminal.cpp.i:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/terminal.cpp.i
+.PHONY : terminal.cpp.i
+
+terminal.s: terminal.cpp.s
+
+.PHONY : terminal.s
+
+# target to generate assembly for a file
+terminal.cpp.s:
+	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/terminal.cpp.s
+.PHONY : terminal.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,7 +369,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... clementine"
-	@echo "... main"
 	@echo "... attribute.o"
 	@echo "... attribute.i"
 	@echo "... attribute.s"
@@ -376,12 +384,15 @@ help:
 	@echo "... input_component.o"
 	@echo "... input_component.i"
 	@echo "... input_component.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... linux_renderer.o"
+	@echo "... linux_renderer.i"
+	@echo "... linux_renderer.s"
 	@echo "... scene.o"
 	@echo "... scene.i"
 	@echo "... scene.s"
+	@echo "... terminal.o"
+	@echo "... terminal.i"
+	@echo "... terminal.s"
 .PHONY : help
 
 

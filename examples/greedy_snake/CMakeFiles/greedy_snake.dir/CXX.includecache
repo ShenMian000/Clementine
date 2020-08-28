@@ -7,7 +7,15 @@
 #IncludeRegexTransform: 
 
 /home/sms/Clementine/examples/greedy_snake/main.cpp
-clem/attribute.h
+clem/clem.hpp
+-
+snake.hpp
+/home/sms/Clementine/examples/greedy_snake/snake.hpp
+
+/home/sms/Clementine/examples/greedy_snake/snake.hpp
+vector
+-
+clem/clem.hpp
 -
 
 clem/attribute.h
@@ -16,7 +24,31 @@ clem/common.hpp
 string
 -
 
+clem/camera.h
 clem/common.hpp
+-
+vector
+-
+
+clem/clem.hpp
+clem/common.hpp
+-
+clem/attribute.h
+-
+clem/cursor.h
+-
+clem/terminal.h
+-
+clem/scene.h
+-
+clem/camera.h
+-
+clem/game_object.h
+-
+
+clem/common.hpp
+stdio.h
+-
 assert.h
 -
 os.hpp
@@ -30,9 +62,37 @@ clem/coord.hpp
 math.h
 -
 
+clem/cursor.h
+clem/common.hpp
+-
+
+clem/game_object.h
+vector
+-
+texture.hpp
+clem/texture.hpp
+
 clem/os.hpp
+
+clem/renderer.h
+
+clem/scene.h
+clem/common.hpp
+-
+vector
+-
+renderer.h
+clem/renderer.h
 
 clem/size.hpp
 common.hpp
 clem/common.hpp
+
+clem/terminal.h
+clem/common.hpp
+-
+
+clem/texture.hpp
+attribute.h
+clem/attribute.h
 

@@ -14,6 +14,11 @@ struct Texture
 	{
 	}
 
+	void put() const
+	{
+		attr.putc(ch);
+	}
+
 	char      ch;
 	Attribute attr;
 };

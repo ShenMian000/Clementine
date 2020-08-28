@@ -3,12 +3,19 @@
 // ³¡¾°ÉãÏñ»ú
 
 #include "camera.h"
+#include <vector>
+#include "renderer.h"
+#include "game_object.h"
+
+using std::vector;
 
 Camera::Camera(Scene& scene)
 		: scene(scene)
 {
 }
 
-void Camera::render()
+void Camera::render(Renderer& renderer, vector<GameObject*>& objs)
 {
+	for(auto obj : objs)
+		renderer.draw(obj->getTexture(), obj->getPosition());
 }

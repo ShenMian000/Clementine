@@ -98,6 +98,7 @@ greedy_snake_EXTERNAL_OBJECTS =
 
 examples/greedy_snake/greedy_snake: examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o
 examples/greedy_snake/greedy_snake: examples/greedy_snake/CMakeFiles/greedy_snake.dir/build.make
+examples/greedy_snake/greedy_snake: lib/libclementine.a
 examples/greedy_snake/greedy_snake: examples/greedy_snake/CMakeFiles/greedy_snake.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable greedy_snake"
 	cd /home/sms/Clementine/examples/greedy_snake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/greedy_snake.dir/link.txt --verbose=$(VERBOSE)

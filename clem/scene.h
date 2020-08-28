@@ -10,22 +10,29 @@
 #include "renderer.h"
 
 class Camera;
+class GameObject;
 
 class Scene
 {
 public:
+	Scene();
 	Scene(const Size& size);
 
+	void update();
 	void render();
+
+	void addObject(GameObject*);
+	void removeObject(GameObject*);
 
 	void                        addCamera(Camera* cam);
 	void                        removeCamera(Camera* cam);
 	const std::vector<Camera*>& getCameras() const;
 
 private:
-	Size                 size;
-	Renderer*            renderer;
-	std::vector<Camera*> cameras;
+	Size                     size;
+	Renderer*                renderer;
+	std::vector<Camera*>     cameras;
+	std::vector<GameObject*> objects;
 };
 
 #endif // CLEM_SCENE_H_

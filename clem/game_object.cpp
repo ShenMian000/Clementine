@@ -10,6 +10,7 @@
 GameObject::GameObject(Scene& scene, const Texture& texture)
 		: scene(scene), texture(texture)
 {
+	scene.addObject(this);
 }
 
 void GameObject::update()

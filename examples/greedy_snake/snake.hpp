@@ -5,26 +5,45 @@
 #define CLEM_EXAMPLE_SNAKE_HPP_
 
 #include <vector>
-#include "game_object.h"
+#include <clem/clem.hpp>
+
+using std::vector;
+using Attr = Attribute;
 
 class Snake : public GameObject
 {
 public:
 	Snake(Scene& scene)
-			: GameObject(scene, {'@', Attribute(Fore::green)})
+			: scene(scene), GameObject(scene, {'@', Attr(fore::green)})
 	{
+		addNewBody(); // 使 Snake 的默认长度为 2
+	}
+
+	~Snake()
+	{
+		for(auto body : bodys)
+			delete body;
 	}
 
 	void update()
 	{
-		for(size_t i = 0; i < body.size(); i++)
+		// 身体随头部移动
+		bodys[0]->setPosition(getPosition());
+		for(size_t i = 1; i < bodys.size(); i++)
 		{
-			body[i].setPosition(body[i + 1].getPosition());
+			bodys[i]->setPosition(bodys[i + 1]->getPosition());
 		}
 	}
 
+	// 添加一节新身体
+	void addNewBody()
+	{
+		bodys.push_back(new GameObject(scene, {'#', Attr(fore::green)}));
+	}
+
 private:
-	std::vector<GameObject> body;
+	Scene&              scene;
+	vector<GameObject*> bodys;
 };
 
 #endif // CLEM_EXAMPLE_SNAKE_HPP_
