@@ -20,7 +20,7 @@ void Attribute::puts(const string& str) const
 void Attribute::puts(const char* str) const
 {
 	on();
-	::puts(str);
+	printf("%s", str);
 	off();
 }
 
@@ -35,7 +35,7 @@ void Attribute::putc(char ch) const
 
 void Attribute::on() const
 {
-	printf(attribute.c_str());
+	printf("%s", attribute.c_str());
 }
 
 void Attribute::off() const

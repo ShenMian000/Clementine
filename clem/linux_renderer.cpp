@@ -12,27 +12,30 @@ LinuxRenderer::LinuxRenderer(const Size& size)
 
 void LinuxRenderer::render()
 {
-  Cursor::moveTo({0, 0});
-  for(ushort y = 0; y < size.y; y++)
-  {
-    for(ushort x = 0; x < size.x; x++)
-      printf(" ");
-    printf("\n");
-  }
+	Cursor::moveTo({0, 0});
+	for(ushort y = 0; y < size.y; y++)
+	{
+		for(ushort x = 0; x < size.x; x++)
+			printf(" ");
+		if(y + 1 < size.y)
+			printf("\n");
+	}
 
-  for(auto record : records)
-  {
+	for(auto record : records)
+	{
 		Cursor::moveTo(record.coord);
 		record.texture.put();
 	}
+	Cursor::moveTo({0, 0});
+	putchar('\n'); // Ë¢ÐÂ»º³åÇø
 }
 
 void LinuxRenderer::draw(const Texture& texture, const Coord& coord)
 {
-  records.push_back({texture, coord});
+	records.push_back({texture, coord});
 }
 
 void LinuxRenderer::clear()
 {
-  records.clear();
+	records.clear();
 }

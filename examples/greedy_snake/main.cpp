@@ -20,7 +20,7 @@ int main()
 	while(true)
 	{
 		auto pos = snake.getPosition();
-		pos.x += 0.1;
+		pos.x += 1;
 		snake.setPosition(pos);
 
 		scene.render();
