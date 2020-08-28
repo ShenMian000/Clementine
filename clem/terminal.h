@@ -10,7 +10,16 @@
 class Terminal
 {
 public:
-  static Size getWinSize();
+  static Size getWindowSize();
+
+  class Cursor
+  {
+  public:
+    static void moveTo(const Coord& coord);
+
+    static void show();
+    static void hide();
+  };
 };
 
 #endif // CLEM_TERMINAL_H_

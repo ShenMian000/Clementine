@@ -6,10 +6,34 @@
 
 #IncludeRegexTransform: 
 
+/home/sms/Clementine/clem/attribute.cpp
+attribute.h
+/home/sms/Clementine/clem/attribute.h
+stdio.h
+-
+windows.h
+-
+
 /home/sms/Clementine/clem/attribute.h
 clem/common.hpp
 -
 string
+-
+
+/home/sms/Clementine/clem/camera.cpp
+camera.h
+/home/sms/Clementine/clem/camera.h
+vector
+-
+renderer.h
+/home/sms/Clementine/clem/renderer.h
+game_object.h
+/home/sms/Clementine/clem/game_object.h
+
+/home/sms/Clementine/clem/camera.h
+clem/common.hpp
+-
+vector
 -
 
 /home/sms/Clementine/clem/common.hpp
@@ -46,7 +70,37 @@ vector
 texture.hpp
 /home/sms/Clementine/clem/texture.hpp
 
+/home/sms/Clementine/clem/linux_renderer.cpp
+linux_renderer.h
+/home/sms/Clementine/clem/linux_renderer.h
+terminal.h
+/home/sms/Clementine/clem/terminal.h
+
+/home/sms/Clementine/clem/linux_renderer.h
+vector
+-
+renderer.h
 /home/sms/Clementine/clem/renderer.h
+common.hpp
+/home/sms/Clementine/clem/common.hpp
+texture.hpp
+/home/sms/Clementine/clem/texture.hpp
+
+/home/sms/Clementine/clem/os.hpp
+
+/home/sms/Clementine/clem/renderer.h
+
+/home/sms/Clementine/clem/scene.cpp
+scene.h
+/home/sms/Clementine/clem/scene.h
+terminal.h
+/home/sms/Clementine/clem/terminal.h
+game_object.h
+/home/sms/Clementine/clem/game_object.h
+camera.h
+/home/sms/Clementine/clem/camera.h
+linux_renderer.h
+/home/sms/Clementine/clem/linux_renderer.h
 
 /home/sms/Clementine/clem/scene.h
 clem/common.hpp
@@ -55,6 +109,26 @@ vector
 -
 renderer.h
 /home/sms/Clementine/clem/renderer.h
+
+/home/sms/Clementine/clem/size.hpp
+common.hpp
+/home/sms/Clementine/clem/common.hpp
+
+/home/sms/Clementine/clem/terminal.cpp
+terminal.h
+/home/sms/Clementine/clem/terminal.h
+termios.h
+-
+unistd.h
+-
+sys/ioctl.h
+-
+windows.h
+-
+
+/home/sms/Clementine/clem/terminal.h
+clem/common.hpp
+-
 
 /home/sms/Clementine/clem/texture.hpp
 attribute.h
@@ -77,6 +151,10 @@ coord.hpp
 clem/coord.hpp
 size.hpp
 clem/size.hpp
+
+clem/coord.hpp
+math.h
+-
 
 clem/os.hpp
 

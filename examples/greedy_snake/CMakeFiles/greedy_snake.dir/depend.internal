@@ -9,7 +9,6 @@ examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o
  clem/clem.hpp
  clem/common.hpp
  clem/coord.hpp
- clem/cursor.h
  clem/game_object.h
  clem/os.hpp
  clem/renderer.h

@@ -26,58 +26,6 @@ void Attribute::putc(char ch) const
 	off();
 }
 
-#ifdef OS_WIN
-
-Attribute::Attribute(ushort attr)
-{
-	// 获取当前缓冲区字符属性
-	CONSOLE_SCREEN_BUFFER_INFO bufInfo;
-
-	auto ret = GetConsoleScreenBufferInfo(hStdOut, &bufInfo);
-	if(!ret)
-		assert(false);
-
-	defaultAttr = bufInfo.wAttributes;
-
-	compile();
-}
-
-void Attribute::on() const
-{
-	SetConsoleTextAttribute(hStdOut, attribute);
-}
-
-void Attribute::off() const
-{
-	SetConsoleTextAttribute(hStdOut, defaultAttr);
-}
-void Attribute::complie(ushort attr)
-{
-	ushort fore = attr & 0x000f;
-	ushort back = attr & 0x00f0;
-	ushort mode = attr & 0x0f00;
-
-	attribute |= fore + 1;
-	attribute |= back + 1;
-
-	switch(mode)
-	{
-	case mode::bold:
-		attribute |= FOREGROUND_INTENSITY; // 前景色加强
-		break;
-
-	case mode::underline:
-		attribute |= COMMON_LVB_UNDERSCORE;
-		break;
-
-	case mode::reverse:
-		attribute |= COMMON_LVB_REVERSE_VIDEO;
-		break;
-	}
-}
-
-#endif // OS_WIN
-
 #ifdef OS_LINUX
 
 Attribute::Attribute(ushort attr)
@@ -195,3 +143,57 @@ void Attribute::complie(ushort attr)
 }
 
 #endif // OS_LINUX
+
+#ifdef OS_WIN
+
+#include <windows.h>
+
+Attribute::Attribute(ushort attr)
+{
+	// 获取当前缓冲区字符属性
+	CONSOLE_SCREEN_BUFFER_INFO bufInfo;
+
+	auto ret = GetConsoleScreenBufferInfo(hStdOut, &bufInfo);
+	if(!ret)
+		assert(false);
+
+	defaultAttr = bufInfo.wAttributes;
+
+	compile();
+}
+
+void Attribute::on() const
+{
+	SetConsoleTextAttribute(hStdOut, attribute);
+}
+
+void Attribute::off() const
+{
+	SetConsoleTextAttribute(hStdOut, defaultAttr);
+}
+void Attribute::complie(ushort attr)
+{
+	ushort fore = attr & 0x000f;
+	ushort back = attr & 0x00f0;
+	ushort mode = attr & 0x0f00;
+
+	attribute |= fore + 1;
+	attribute |= back + 1;
+
+	switch(mode)
+	{
+	case mode::bold:
+		attribute |= FOREGROUND_INTENSITY; // 前景色加强
+		break;
+
+	case mode::underline:
+		attribute |= COMMON_LVB_UNDERSCORE;
+		break;
+
+	case mode::reverse:
+		attribute |= COMMON_LVB_REVERSE_VIDEO;
+		break;
+	}
+}
+
+#endif // OS_WIN

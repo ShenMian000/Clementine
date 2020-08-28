@@ -3,7 +3,7 @@
 // ¼òÒ×äÖÈ¾Æ÷
 
 #include "linux_renderer.h"
-#include "cursor.h"
+#include "terminal.h"
 
 LinuxRenderer::LinuxRenderer(const Size& size)
 		: size(size)
@@ -12,7 +12,7 @@ LinuxRenderer::LinuxRenderer(const Size& size)
 
 void LinuxRenderer::render()
 {
-	Cursor::moveTo({0, 0});
+	Terminal::Cursor::moveTo({0, 0});
 	for(ushort y = 0; y < size.y; y++)
 	{
 		for(ushort x = 0; x < size.x; x++)
@@ -23,10 +23,10 @@ void LinuxRenderer::render()
 
 	for(auto record : records)
 	{
-		Cursor::moveTo(record.coord);
+		Terminal::Cursor::moveTo(record.coord);
 		record.texture.put();
 	}
-	Cursor::moveTo({0, 0});
+	Terminal::Cursor::moveTo({0, 0});
 	putchar('\n'); // Ë¢ÐÂ»º³åÇø
 }
 

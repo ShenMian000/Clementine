@@ -150,12 +150,12 @@ examples/greedy_snake/clean: examples/greedy_snake/CMakeFiles/greedy_snake.dir/c
 clem/CMakeFiles/clementine.dir/all:
 	$(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/depend
 	$(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target clementine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target clementine"
 .PHONY : clem/CMakeFiles/clementine.dir/all
 
 # Build rule for subdir invocation for target.
 clem/CMakeFiles/clementine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sms/Clementine/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sms/Clementine/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clem/CMakeFiles/clementine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sms/Clementine/CMakeFiles 0
 .PHONY : clem/CMakeFiles/clementine.dir/rule
@@ -177,12 +177,12 @@ clem/CMakeFiles/clementine.dir/clean:
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/all: clem/CMakeFiles/clementine.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/greedy_snake/CMakeFiles/greedy_snake.dir/build.make examples/greedy_snake/CMakeFiles/greedy_snake.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/greedy_snake/CMakeFiles/greedy_snake.dir/build.make examples/greedy_snake/CMakeFiles/greedy_snake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=10,11 "Built target greedy_snake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sms/Clementine/CMakeFiles --progress-num=9,10 "Built target greedy_snake"
 .PHONY : examples/greedy_snake/CMakeFiles/greedy_snake.dir/all
 
 # Build rule for subdir invocation for target.
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sms/Clementine/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sms/Clementine/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/greedy_snake/CMakeFiles/greedy_snake.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sms/Clementine/CMakeFiles 0
 .PHONY : examples/greedy_snake/CMakeFiles/greedy_snake.dir/rule

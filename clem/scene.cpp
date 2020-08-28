@@ -10,7 +10,7 @@
 #include "linux_renderer.h"
 
 Scene::Scene()
-		: Scene(Terminal::getWinSize())
+		: Scene(Terminal::getWindowSize())
 {
 }
 

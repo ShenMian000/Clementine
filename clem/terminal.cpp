@@ -8,9 +8,71 @@
 #include <unistd.h>
 #include <sys/ioctl.h>
 
-Size Terminal::getWinSize()
+#ifdef OS_LINUX
+
+Size Terminal::getWindowSize()
 {
   winsize winSize;
   ioctl(STDIN_FILENO, TIOCGWINSZ, &winSize);
   return {winSize.ws_col, winSize.ws_row};
 }
+
+void Terminal::Cursor::moveTo(const Coord& coord)
+{
+	printf("\e[%u;%uH", (ushort)coord.y, (ushort)coord.x);
+}
+
+void Terminal::Cursor::show()
+{
+	printf("\e[?25h");
+}
+
+void Terminal::Cursor::hide()
+{
+	printf("\e[?25l");
+}
+
+#endif // OS_LINUX
+
+#ifdef OS_WIN
+
+#include <windows.h>
+
+void Terminal::Cursor::moveTo(const Coord& coord)
+{
+  SetConsoleCursorPosition(hStdOut, {x, y});
+}
+
+void Terminal::Cursor::show()
+{
+	CONSOLE_CURSOR_INFO curInfo;
+	bool                ret;
+
+	ret = GetConsoleCursorInfo(hStdOut, &curInfo);
+	if(!ret)
+    assert(false);
+
+	curInfo.bVisible = TRUE;
+
+	ret = SetConsoleCursorInfo(hStdOut, &curInfo);
+	if(!ret)
+    assert(false);
+}
+
+void Terminal::Cursor::hide()
+{
+	CONSOLE_CURSOR_INFO curInfo;
+	bool                ret;
+
+	ret = GetConsoleCursorInfo(hStdOut, &curInfo);
+	if(!ret)
+    assert(false);
+
+	curInfo.bVisible = FALSE;
+
+	ret = SetConsoleCursorInfo(hStdOut, &curInfo);
+	if(!ret)
+    assert(false);
+}
+
+#endif // OS_WIN

@@ -19,13 +19,6 @@ clem/CMakeFiles/clementine.dir/camera.cpp.o
  clem/coord.hpp
  clem/os.hpp
  clem/size.hpp
-clem/CMakeFiles/clementine.dir/cursor.cpp.o
- /home/sms/Clementine/clem/cursor.cpp
- /home/sms/Clementine/clem/cursor.h
- clem/common.hpp
- clem/coord.hpp
- clem/os.hpp
- clem/size.hpp
 clem/CMakeFiles/clementine.dir/game_object.cpp.o
  /home/sms/Clementine/clem/attribute.h
  /home/sms/Clementine/clem/common.hpp
@@ -52,12 +45,12 @@ clem/CMakeFiles/clementine.dir/linux_renderer.cpp.o
  /home/sms/Clementine/clem/attribute.h
  /home/sms/Clementine/clem/common.hpp
  /home/sms/Clementine/clem/coord.hpp
- /home/sms/Clementine/clem/cursor.h
  /home/sms/Clementine/clem/linux_renderer.cpp
  /home/sms/Clementine/clem/linux_renderer.h
  /home/sms/Clementine/clem/os.hpp
  /home/sms/Clementine/clem/renderer.h
  /home/sms/Clementine/clem/size.hpp
+ /home/sms/Clementine/clem/terminal.h
  /home/sms/Clementine/clem/texture.hpp
  clem/common.hpp
 clem/CMakeFiles/clementine.dir/scene.cpp.o

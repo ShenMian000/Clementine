@@ -37,15 +37,13 @@ clem/common.hpp
 -
 clem/attribute.h
 -
-clem/cursor.h
--
-clem/terminal.h
--
-clem/scene.h
--
 clem/camera.h
 -
 clem/game_object.h
+-
+clem/scene.h
+-
+clem/terminal.h
 -
 
 clem/common.hpp
@@ -62,10 +60,6 @@ clem/size.hpp
 
 clem/coord.hpp
 math.h
--
-
-clem/cursor.h
-clem/common.hpp
 -
 
 clem/game_object.h

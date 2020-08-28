@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sms/Clementine/clem/attribute.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/attribute.cpp.o"
   "/home/sms/Clementine/clem/camera.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/camera.cpp.o"
-  "/home/sms/Clementine/clem/cursor.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/cursor.cpp.o"
   "/home/sms/Clementine/clem/game_object.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/game_object.cpp.o"
   "/home/sms/Clementine/clem/input_component.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/input_component.cpp.o"
   "/home/sms/Clementine/clem/linux_renderer.cpp" "/home/sms/Clementine/clem/CMakeFiles/clementine.dir/linux_renderer.cpp.o"

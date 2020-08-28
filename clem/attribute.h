@@ -23,13 +23,13 @@ public:
 private:
 	void complie(ushort attr);
 
+#ifdef OS_LINUX
+	std::string attribute;
+#endif
+
 #ifdef OS_WIN
 	ushort attribute;
 	ushort defaultAttr;
-#endif
-
-#ifdef OS_LINUX
-	std::string attribute;
 #endif
 };
 

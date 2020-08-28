@@ -8,7 +8,6 @@ examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/camera.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/clem.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/common.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/coord.hpp
-examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/cursor.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/game_object.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/os.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: clem/renderer.h

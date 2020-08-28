@@ -198,33 +198,6 @@ camera.cpp.s:
 	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
-cursor.o: cursor.cpp.o
-
-.PHONY : cursor.o
-
-# target to build an object file
-cursor.cpp.o:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/cursor.cpp.o
-.PHONY : cursor.cpp.o
-
-cursor.i: cursor.cpp.i
-
-.PHONY : cursor.i
-
-# target to preprocess a source file
-cursor.cpp.i:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/cursor.cpp.i
-.PHONY : cursor.cpp.i
-
-cursor.s: cursor.cpp.s
-
-.PHONY : cursor.s
-
-# target to generate assembly for a file
-cursor.cpp.s:
-	cd /home/sms/Clementine && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/cursor.cpp.s
-.PHONY : cursor.cpp.s
-
 game_object.o: game_object.cpp.o
 
 .PHONY : game_object.o
@@ -375,9 +348,6 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
-	@echo "... cursor.o"
-	@echo "... cursor.i"
-	@echo "... cursor.s"
 	@echo "... game_object.o"
 	@echo "... game_object.i"
 	@echo "... game_object.s"
