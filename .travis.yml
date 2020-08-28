@@ -7,5 +7,7 @@ os:
   - osx
 script:
   - rm CMakeCache.txt
-  - cmake .
+  - mkdir build
+  - cd build
+  - cmake ..
   - make
