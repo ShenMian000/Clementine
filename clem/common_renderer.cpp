@@ -17,12 +17,9 @@ void CommonRenderer::render()
 	// Çå¿ÕÆÁÄ»
 	Terminal::Cursor::moveTo({0, 0});
 	string line(size.x, ' ');
-	for(ushort y = 0; y < size.y; y++)
-	{
-		printf(line.c_str());
-		if(y + 1 < size.y)
-			printf("\n");
-	}
+	for(ushort y = 0; y < size.y - 1; y++)
+		puts(line.c_str());
+	printf("%s", line.c_str());
 
 	// »æÖÆ
 	for(auto record : records)

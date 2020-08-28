@@ -48,3 +48,6 @@
 695	901	620308755	examples/greedy_snake/greedy_snake.exe	35b7d68365bcc8cb
 4	856	620308814	examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.obj	12809bc2e81ada56
 856	1126	620308814	examples/greedy_snake/greedy_snake.exe	35b7d68365bcc8cb
+3	674	620309071	clem/CMakeFiles/clementine.dir/common_renderer.cpp.obj	ebd0081b32857377
+674	755	620309071	../../../lib/clementine.lib	86d0d54bcfb18f1d
+756	977	620309071	examples/greedy_snake/greedy_snake.exe	35b7d68365bcc8cb
