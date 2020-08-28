@@ -127,14 +127,6 @@ build clem\CMakeFiles\clementine.dir\terminal.cpp.obj: CXX_COMPILER__clementine_
   TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
   TARGET_PDB = ..\..\lib\clementine.pdb
 
-build clem\CMakeFiles\clementine.dir\windows_renderer.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\windows_renderer.cpp || cmake_object_order_depends_target_clementine_Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
-  OBJECT_DIR = clem\CMakeFiles\clementine.dir
-  OBJECT_FILE_DIR = clem\CMakeFiles\clementine.dir
-  TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
-  TARGET_PDB = ..\..\lib\clementine.pdb
-
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target clementine
@@ -143,7 +135,7 @@ build clem\CMakeFiles\clementine.dir\windows_renderer.cpp.obj: CXX_COMPILER__cle
 #############################################
 # Link the static library ..\..\lib\clementine.lib
 
-build ..\..\lib\clementine.lib: CXX_STATIC_LIBRARY_LINKER__clementine_Debug clem\CMakeFiles\clementine.dir\attribute.cpp.obj clem\CMakeFiles\clementine.dir\camera.cpp.obj clem\CMakeFiles\clementine.dir\common_renderer.cpp.obj clem\CMakeFiles\clementine.dir\game_object.cpp.obj clem\CMakeFiles\clementine.dir\input_component.cpp.obj clem\CMakeFiles\clementine.dir\scene.cpp.obj clem\CMakeFiles\clementine.dir\terminal.cpp.obj clem\CMakeFiles\clementine.dir\windows_renderer.cpp.obj
+build ..\..\lib\clementine.lib: CXX_STATIC_LIBRARY_LINKER__clementine_Debug clem\CMakeFiles\clementine.dir\attribute.cpp.obj clem\CMakeFiles\clementine.dir\camera.cpp.obj clem\CMakeFiles\clementine.dir\common_renderer.cpp.obj clem\CMakeFiles\clementine.dir\game_object.cpp.obj clem\CMakeFiles\clementine.dir\input_component.cpp.obj clem\CMakeFiles\clementine.dir\scene.cpp.obj clem\CMakeFiles\clementine.dir\terminal.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = clem\CMakeFiles\clementine.dir

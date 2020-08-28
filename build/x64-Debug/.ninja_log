@@ -49,3 +49,5 @@
 724	985	620352334	examples/greedy_snake/greedy_snake.exe	3b35193df99878d0
 3	909	620352374	examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.obj	dc538561f962f835
 910	1154	620352374	examples/greedy_snake/greedy_snake.exe	3b35193df99878d0
+3	61	620352559	../../lib/clementine.lib	adae05dfcf1e4e4b
+62	540	620352559	examples/greedy_snake/greedy_snake.exe	3b35193df99878d0
