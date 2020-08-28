@@ -1,7 +1,0 @@
-attribute.a1::clem/attribute.cpp
-camera.a1::clem/camera.cpp
-common_renderer.a1::clem/common_renderer.cpp
-game_object.a1::clem/game_object.cpp
-input_component.a1::clem/input_component.cpp
-scene.a1::clem/scene.cpp
-terminal.a1::clem/terminal.cpp
