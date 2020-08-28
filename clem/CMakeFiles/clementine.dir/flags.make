@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/sms/Clementine/. -I"/home/sms/Clementine/D:/Program Files/Program/boost_1_73_0"
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++11
 
