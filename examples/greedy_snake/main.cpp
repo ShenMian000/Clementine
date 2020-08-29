@@ -51,7 +51,13 @@ int main()
 
 		scene.render();
 
+		#ifdef LINUX
+		#include <unistd.h>
+		usleep(100000);
+		#endif
+		#ifdef OS_WIN
 		Sleep(100);
+		#endif
 	}
 
 	getchar();
