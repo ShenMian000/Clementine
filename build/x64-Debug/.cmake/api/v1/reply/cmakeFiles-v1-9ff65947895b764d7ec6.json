@@ -128,9 +128,6 @@
 		},
 		{
 			"path" : "examples/balls/CMakeLists.txt"
-		},
-		{
-			"path" : "examples/greedy_snake/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

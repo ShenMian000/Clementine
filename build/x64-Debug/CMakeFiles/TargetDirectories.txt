@@ -8,6 +8,3 @@ C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/CMakeFiles/rebuild_ca
 C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/balls/CMakeFiles/rebuild_cache.dir
 C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/balls/CMakeFiles/balls.dir
 C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/balls/CMakeFiles/edit_cache.dir
-C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/CMakeFiles/greedy_snake.dir
-C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/CMakeFiles/edit_cache.dir
-C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/CMakeFiles/rebuild_cache.dir

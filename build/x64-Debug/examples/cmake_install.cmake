@@ -35,7 +35,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/balls/cmake_install.cmake")
-  include("C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/cmake_install.cmake")
 
 endif()
 

@@ -36,8 +36,7 @@
 					"build" : "examples",
 					"childIndexes" : 
 					[
-						3,
-						4
+						3
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -60,20 +59,6 @@
 					[
 						0
 					]
-				},
-				{
-					"build" : "examples/greedy_snake",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.5"
-					},
-					"parentIndex" : 2,
-					"projectIndex" : 0,
-					"source" : "examples/greedy_snake",
-					"targetIndexes" : 
-					[
-						2
-					]
 				}
 			],
 			"name" : "Debug",
@@ -85,15 +70,13 @@
 						0,
 						1,
 						2,
-						3,
-						4
+						3
 					],
 					"name" : "Clementine",
 					"targetIndexes" : 
 					[
 						0,
-						1,
-						2
+						1
 					]
 				}
 			],
@@ -111,13 +94,6 @@
 					"id" : "clementine::@67f10b12ae9047c0aee9",
 					"jsonFile" : "target-clementine-Debug-ddb5f6a90970005ae1d2.json",
 					"name" : "clementine",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 4,
-					"id" : "greedy_snake::@0f085320bd86b1be05cb",
-					"jsonFile" : "target-greedy_snake-Debug-e34800b8a0ed5ec3ac59.json",
-					"name" : "greedy_snake",
 					"projectIndex" : 0
 				}
 			]
