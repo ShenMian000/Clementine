@@ -6,12 +6,12 @@
 
 #include <clem/common.hpp>
 
-#include <clem/basic_physics.h>
 #include <clem/keyboard_input.h>
 
 #include <clem/attribute.h>
 #include <clem/camera.h>
 #include <clem/game_object.h>
+#include <clem/physics_component.h>
 #include <clem/scene.h>
 #include <clem/terminal.h>
 

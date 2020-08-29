@@ -23,15 +23,17 @@ public:
 	BallPhysics(Scene& scene, const Rect& border)
 			: scene(scene), border(border)
 	{
-		velocity.x = (double)rand() / RAND_MAX;
-		velocity.y = (double)rand() / RAND_MAX;
+		velocity.x = (double)rand() / (RAND_MAX + 1);
+		velocity.y = (double)rand() / (RAND_MAX + 1);
 	}
 
 	void update(GameObject& obj)
 	{
 		auto pos = obj.getPosition();
-		
-		// 边界检测
+
+		pos += velocity;
+
+		// 碰撞检测
 		if(pos.x <= border.x || pos.x >= border.x + border.width)
 			velocity.x *= -1;
 		if(pos.y <= border.y || pos.y >= border.y + border.height)
@@ -43,25 +45,13 @@ public:
 				continue;
 
 			auto otherPos = ball->getPosition();
-			auto texture  = obj.getTexture();
+
 			if(pos.distance(otherPos) < 1)
 			{
-				auto xDis = abs(pos.x - otherPos.x);
-				auto yDis = abs(pos.y - otherPos.y);
-				if(xDis < 1)
-					velocity.x *= -1;
-				if(yDis < 1)
-					velocity.y *= -1;
-
-				texture.attr = Attribute(fore::red);
-				obj.setTexture(texture);
+				velocity.x *= -1;
+				velocity.y *= -1;
+				break;
 			}
-			else
-			{
-				texture.attr = Attribute(fore::yellow);
-				obj.setTexture(texture);
-			}
-				
 		}
 
 		PhysicsComponent::update(obj);
