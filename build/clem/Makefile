@@ -198,6 +198,33 @@ camera.cpp.s:
 	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+common_renderer.o: common_renderer.cpp.o
+
+.PHONY : common_renderer.o
+
+# target to build an object file
+common_renderer.cpp.o:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/common_renderer.cpp.o
+.PHONY : common_renderer.cpp.o
+
+common_renderer.i: common_renderer.cpp.i
+
+.PHONY : common_renderer.i
+
+# target to preprocess a source file
+common_renderer.cpp.i:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/common_renderer.cpp.i
+.PHONY : common_renderer.cpp.i
+
+common_renderer.s: common_renderer.cpp.s
+
+.PHONY : common_renderer.s
+
+# target to generate assembly for a file
+common_renderer.cpp.s:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/common_renderer.cpp.s
+.PHONY : common_renderer.cpp.s
+
 game_object.o: game_object.cpp.o
 
 .PHONY : game_object.o
@@ -225,59 +252,59 @@ game_object.cpp.s:
 	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/game_object.cpp.s
 .PHONY : game_object.cpp.s
 
-input_component.o: input_component.cpp.o
+input.o: input.cpp.o
 
-.PHONY : input_component.o
-
-# target to build an object file
-input_component.cpp.o:
-	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input_component.cpp.o
-.PHONY : input_component.cpp.o
-
-input_component.i: input_component.cpp.i
-
-.PHONY : input_component.i
-
-# target to preprocess a source file
-input_component.cpp.i:
-	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input_component.cpp.i
-.PHONY : input_component.cpp.i
-
-input_component.s: input_component.cpp.s
-
-.PHONY : input_component.s
-
-# target to generate assembly for a file
-input_component.cpp.s:
-	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input_component.cpp.s
-.PHONY : input_component.cpp.s
-
-linux_renderer.o: linux_renderer.cpp.o
-
-.PHONY : linux_renderer.o
+.PHONY : input.o
 
 # target to build an object file
-linux_renderer.cpp.o:
-	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/linux_renderer.cpp.o
-.PHONY : linux_renderer.cpp.o
+input.cpp.o:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input.cpp.o
+.PHONY : input.cpp.o
 
-linux_renderer.i: linux_renderer.cpp.i
+input.i: input.cpp.i
 
-.PHONY : linux_renderer.i
+.PHONY : input.i
 
 # target to preprocess a source file
-linux_renderer.cpp.i:
-	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/linux_renderer.cpp.i
-.PHONY : linux_renderer.cpp.i
+input.cpp.i:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input.cpp.i
+.PHONY : input.cpp.i
 
-linux_renderer.s: linux_renderer.cpp.s
+input.s: input.cpp.s
 
-.PHONY : linux_renderer.s
+.PHONY : input.s
 
 # target to generate assembly for a file
-linux_renderer.cpp.s:
-	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/linux_renderer.cpp.s
-.PHONY : linux_renderer.cpp.s
+input.cpp.s:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/input.cpp.s
+.PHONY : input.cpp.s
+
+keyboard_input.o: keyboard_input.cpp.o
+
+.PHONY : keyboard_input.o
+
+# target to build an object file
+keyboard_input.cpp.o:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/keyboard_input.cpp.o
+.PHONY : keyboard_input.cpp.o
+
+keyboard_input.i: keyboard_input.cpp.i
+
+.PHONY : keyboard_input.i
+
+# target to preprocess a source file
+keyboard_input.cpp.i:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/keyboard_input.cpp.i
+.PHONY : keyboard_input.cpp.i
+
+keyboard_input.s: keyboard_input.cpp.s
+
+.PHONY : keyboard_input.s
+
+# target to generate assembly for a file
+keyboard_input.cpp.s:
+	cd /home/sms/Clementine/build && $(MAKE) $(MAKESILENT) -f clem/CMakeFiles/clementine.dir/build.make clem/CMakeFiles/clementine.dir/keyboard_input.cpp.s
+.PHONY : keyboard_input.cpp.s
 
 scene.o: scene.cpp.o
 
@@ -348,15 +375,18 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... common_renderer.o"
+	@echo "... common_renderer.i"
+	@echo "... common_renderer.s"
 	@echo "... game_object.o"
 	@echo "... game_object.i"
 	@echo "... game_object.s"
-	@echo "... input_component.o"
-	@echo "... input_component.i"
-	@echo "... input_component.s"
-	@echo "... linux_renderer.o"
-	@echo "... linux_renderer.i"
-	@echo "... linux_renderer.s"
+	@echo "... input.o"
+	@echo "... input.i"
+	@echo "... input.s"
+	@echo "... keyboard_input.o"
+	@echo "... keyboard_input.i"
+	@echo "... keyboard_input.s"
 	@echo "... scene.o"
 	@echo "... scene.i"
 	@echo "... scene.s"

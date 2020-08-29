@@ -22,6 +22,10 @@ int main()
 	keyboard.bind('S', 1);
 	keyboard.bind('A', 2);
 	keyboard.bind('D', 3);
+	keyboard.bind('w', 0);
+	keyboard.bind('s', 1);
+	keyboard.bind('a', 2);
+	keyboard.bind('d', 3);
 
 	while(true)
 	{

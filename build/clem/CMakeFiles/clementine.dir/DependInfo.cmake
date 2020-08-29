@@ -6,9 +6,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sms/Clementine/clem/attribute.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/attribute.cpp.o"
   "/home/sms/Clementine/clem/camera.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/camera.cpp.o"
+  "/home/sms/Clementine/clem/common_renderer.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/common_renderer.cpp.o"
   "/home/sms/Clementine/clem/game_object.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/game_object.cpp.o"
-  "/home/sms/Clementine/clem/input_component.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/input_component.cpp.o"
-  "/home/sms/Clementine/clem/linux_renderer.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/linux_renderer.cpp.o"
+  "/home/sms/Clementine/clem/input.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/input.cpp.o"
+  "/home/sms/Clementine/clem/keyboard_input.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/keyboard_input.cpp.o"
   "/home/sms/Clementine/clem/scene.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/scene.cpp.o"
   "/home/sms/Clementine/clem/terminal.cpp" "/home/sms/Clementine/build/clem/CMakeFiles/clementine.dir/terminal.cpp.o"
   )

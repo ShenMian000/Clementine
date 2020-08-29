@@ -46,7 +46,9 @@ void KeyboardInput::scan()
 
 	tcsetattr(tty, TCSANOW, &newTermios);
 	read(tty, &code, 1);
+	printf("[%c]", code);
 	tcsetattr(tty, TCSANOW, &oldTermios);
+	
 
 	for(auto pair : index)
 		if(pair.first == code)

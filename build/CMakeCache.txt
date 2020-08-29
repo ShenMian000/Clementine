@@ -215,9 +215,6 @@ Clementine_BINARY_DIR:STATIC=/home/sms/Clementine/build
 //Value Computed by CMake
 Clementine_SOURCE_DIR:STATIC=/home/sms/Clementine
 
-//Dependencies for the target
-clementine_LIB_DEPENDS:STATIC=general;ncurses;
-
 
 ########################
 # INTERNAL cache entries

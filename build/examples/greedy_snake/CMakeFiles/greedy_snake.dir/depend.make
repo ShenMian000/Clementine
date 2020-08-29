@@ -5,14 +5,17 @@ examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/attribute.
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/camera.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/clem.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/common.hpp
-examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/coord.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/game_object.h
+examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/input.h
+examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/keyboard_input.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/os.hpp
-examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/renderer.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/scene.h
-examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/size.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/terminal.h
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/texture.hpp
+examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/type.hpp
+examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/type/coord.hpp
+examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/type/rect.hpp
+examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../clem/type/size.hpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../examples/greedy_snake/main.cpp
 examples/greedy_snake/CMakeFiles/greedy_snake.dir/main.cpp.o: ../examples/greedy_snake/snake.hpp
 
