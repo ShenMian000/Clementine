@@ -6,8 +6,10 @@
 #include <clem/clem.hpp>
 
 #ifdef OS_WIN
+#include <windows.h>
 #define sleep(ms) Sleep(ms)
 #else
+#include <sys/wait.h>
 #define sleep(ms) sleep(ms * 1000)
 #endif
 
