@@ -22,10 +22,7 @@ jobs:
       run: rm -rf build
 
     - name: Create Build Environment
-      run: [
-        mkdir buile,
-        cmake -E make_directory ${{runner.workspace}}/build
-      ]
+      run: cmake -E make_directory ${{runner.workspace}}/build
 
     - name: Configure CMake
       shell: bash
