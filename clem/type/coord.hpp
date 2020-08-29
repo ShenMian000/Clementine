@@ -10,6 +10,11 @@ struct Coord
 	float x;
 	float y;
 
+	Coord operator/(const Coord& coord)
+	{
+		return Coord(coord.x / 2, coord.y / 2);
+	}
+
 	Coord()
 			: Coord(0, 0)
 	{

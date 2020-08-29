@@ -17,52 +17,7 @@ int main()
 
 	snake.setPosition(Coord(winSize.x / 2, winSize.y / 2)); // 将 蛇 的位置设置到场景中央
 
-	KeyboardInput keyboard;
-	keyboard.bind('W', 0);
-	keyboard.bind('S', 1);
-	keyboard.bind('A', 2);
-	keyboard.bind('D', 3);
-	keyboard.bind('w', 0);
-	keyboard.bind('s', 1);
-	keyboard.bind('a', 2);
-	keyboard.bind('d', 3);
-
-	while(true)
-	{
-		for(auto event : keyboard.update())
-		{
-			auto pos = snake.getPosition();
-			switch(event)
-			{
-			case 0:
-				pos.y--;
-				break;
-
-			case 1:
-				pos.y++;
-				break;
-
-			case 2:
-				pos.x--;
-				break;
-
-			case 3:
-				pos.x++;
-				break;
-			}
-			snake.setPosition(pos);
-		}
-
-		scene.render();
-
-		#ifdef LINUX
-		#include <unistd.h>
-		usleep(100000);
-		#endif
-		#ifdef OS_WIN
-		Sleep(100);
-		#endif
-	}
+	scene.render();
 
 	getchar();
 	return 0;
