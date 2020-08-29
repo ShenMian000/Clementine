@@ -16,7 +16,7 @@ void CommonRenderer::render()
 {
 	// Çå¿ÕÆÁÄ»
 	string line(rect.width, '.');
-	for(ushort i = 0; i <= rect.height; i++)
+	for(ushort i = 0; i < rect.height; i++)
 	{
 		Terminal::Cursor::moveTo(Vector(rect.x, rect.y + i));
 		printf("%s", line.c_str());

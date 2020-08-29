@@ -17,6 +17,7 @@ struct Vector
 	Vector();
 	Vector(float x, float y);
 
+	ushort distance(const Vector& vec) const;
 	ushort length() const;
 
 	bool    operator==(const Vector& vec) const;

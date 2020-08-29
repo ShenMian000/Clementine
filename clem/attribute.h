@@ -20,6 +20,8 @@ public:
 	void on() const;
 	void off() const;
 
+	bool operator==(const Attribute& attr);
+
 private:
 	void complie(ushort attr);
 

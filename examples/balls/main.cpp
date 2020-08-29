@@ -15,11 +15,13 @@
 
 using namespace std;
 
+vector<GameObject*> balls;
+
 class BallPhysics : public PhysicsComponent
 {
 public:
-	BallPhysics()
-			: border(Vector(0, Terminal::getWindowSize().y), Terminal::getWindowSize())
+	BallPhysics(Scene& scene, const Rect& border)
+			: scene(scene), border(border)
 	{
 		velocity.x = (double)rand() / RAND_MAX;
 		velocity.y = (double)rand() / RAND_MAX;
@@ -28,44 +30,78 @@ public:
 	void update(GameObject& obj)
 	{
 		auto pos = obj.getPosition();
-		if(pos.x <= border.x || pos.x >= border.width)
+		
+		// 边界检测
+		if(pos.x <= border.x || pos.x >= border.x + border.width)
 			velocity.x *= -1;
-		if(pos.y <= border.y || pos.y >= border.height)
+		if(pos.y <= border.y || pos.y >= border.y + border.height)
 			velocity.y *= -1;
+
+		for(auto ball : balls)
+		{
+			if(ball == &obj)
+				continue;
+
+			auto otherPos = ball->getPosition();
+			auto texture  = obj.getTexture();
+			if(pos.distance(otherPos) < 1)
+			{
+				auto xDis = abs(pos.x - otherPos.x);
+				auto yDis = abs(pos.y - otherPos.y);
+				if(xDis < 1)
+					velocity.x *= -1;
+				if(yDis < 1)
+					velocity.y *= -1;
+
+				texture.attr = Attribute(fore::red);
+				obj.setTexture(texture);
+			}
+			else
+			{
+				texture.attr = Attribute(fore::yellow);
+				obj.setTexture(texture);
+			}
+				
+		}
 
 		PhysicsComponent::update(obj);
 	}
 
 private:
-	Rect border;
+	Rect   border;
+	Scene& scene;
 };
 
 int main()
 {
-	Terminal::Cursor::hide();
-	Scene               scene({0, 0, 20, 10});
-	vector<GameObject*> balls;
 
-	srand(time(nullptr));
-
-	int num;
+	int  num;
+	Rect border;
 	printf("Balls num: ");
 	scanf("%d", &num);
+	printf("Border   : ");
+	scanf("%f %f %f %f", &border.x, &border.y, &border.width, &border.height);
+
+	Terminal::Cursor::hide();
+
+	Scene scene(border);
+
+	srand(time(nullptr));
 
 	for(int i = 0; i < num; i++)
 	{
 		auto ball = new GameObject(scene, {'O', Attribute(fore::yellow)});
-		ball->setPhysics(new BallPhysics());
-		ball->setPosition({1, 1});
+		ball->setPhysics(new BallPhysics(scene, border));
+		ball->setPosition({rand() % (int)border.width + border.x, rand() % (int)border.height + border.y});
 		balls.push_back(ball);
 	}
 
 	while(true)
 	{
-		Terminal::Cursor::moveTo({0, 11});
+		Terminal::Cursor::moveTo({border.x, border.y + border.height});
 		auto pos = balls.back()->getPosition();
 		printf("%f %f", pos.x, pos.y);
-		getchar();
+		// getchar();
 
 		scene.update();
 		scene.render();

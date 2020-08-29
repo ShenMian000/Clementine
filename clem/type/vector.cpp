@@ -3,6 +3,7 @@
 // œÚ¡ø
 
 #include "vector.h"
+#include <math.h>
 
 Vector::Vector()
 		: Vector(0, 0)
@@ -12,6 +13,11 @@ Vector::Vector()
 Vector::Vector(float x, float y)
 		: x(x), y(y)
 {
+}
+
+ushort Vector::distance(const Vector& vec) const
+{
+	return Vector(fabs(x - vec.x), fabs(y - vec.y)).length();
 }
 
 ushort Vector::length() const

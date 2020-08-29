@@ -26,6 +26,14 @@ void Attribute::putc(char ch) const
 	off();
 }
 
+bool Attribute::operator==(const Attribute& attr)
+{
+	if(attribute == attr.attribute)
+		return true;
+	else
+		return false;
+}
+
 #ifdef OS_LINUX
 
 Attribute::Attribute(ushort attr)
