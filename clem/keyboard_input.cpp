@@ -31,6 +31,8 @@ const vector<ushort>& KeyboardInput::update()
 #ifdef OS_LINUX
 
 #include <termios.h>
+#include <fcntl.h>
+// #include <unistd.h>
 
 void KeyboardInput::scan()
 {
