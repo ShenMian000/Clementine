@@ -12,7 +12,7 @@
 class PhysicsComponent : public Component
 {
 public:
-	virtual void update(GameObject&) override;
+	virtual void update(GameObject&);
 
 	void          setVelocity(const Vector& vec);
 	const Vector& getVelocity() const;
