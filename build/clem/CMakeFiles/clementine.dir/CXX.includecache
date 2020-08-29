@@ -53,11 +53,15 @@ keyboard_input.h
 /home/sms/Clementine/clem/keyboard_input.h
 time.h
 -
+assert.h
+-
 termios.h
 -
 fcntl.h
 -
 unistd.h
+-
+linux/input.h
 -
 windows.h
 -

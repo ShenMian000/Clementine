@@ -30,29 +30,25 @@ const vector<ushort>& KeyboardInput::update()
 
 #ifdef OS_LINUX
 
+#include <assert.h>
 #include <termios.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <linux/input.h>
 
 void KeyboardInput::scan()
 {
-	char    code;
-	termios oldTermios, newTermios;
-	auto    tty = open("/dev/tty", O_RDONLY);
+	input_event event;
 
-	tcgetattr(tty, &oldTermios);
-	newTermios = oldTermios;
-	newTermios.c_lflag &= ~(ICANON | ECHO);
+	auto keyboard = open("/dev/input/event1", O_RDONLY);
+	assert(keyboard != -1);
 
-	tcsetattr(tty, TCSANOW, &newTermios);
-	read(tty, &code, 1);
-	printf("[%c]", code);
-	tcsetattr(tty, TCSANOW, &oldTermios);
+	auto ret = read(keyboard, &event, sizeof(event));
+	if(ret != EV_KEY)
+		return;
 	
-
-	for(auto pair : index)
-		if(pair.first == code)
-			events.push_back(pair.second);
+	if(event.value == 1)
+		printf("%d %d", event.code, 'w');
 }
 
 #endif // OS_LINUX
