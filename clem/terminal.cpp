@@ -14,7 +14,7 @@ Size Terminal::getWindowSize()
 {
   winsize winSize;
   ioctl(STDIN_FILENO, TIOCGWINSZ, &winSize);
-  return {winSize.ws_col, winSize.ws_row};
+  return {winSize.ws_col, winSize.ws_row + 1};
 }
 
 void Terminal::Cursor::moveTo(const Vector& coord)

@@ -43,7 +43,7 @@ private:
 int main()
 {
 	Terminal::Cursor::hide();
-	Scene scene;
+	Scene               scene; // {5, 5, 30, 16}
 	vector<GameObject*> balls;
 
 	srand(time(nullptr));  
