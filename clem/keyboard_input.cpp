@@ -32,7 +32,7 @@ const vector<ushort>& KeyboardInput::update()
 
 #include <termios.h>
 #include <fcntl.h>
-// #include <unistd.h>
+#include <unistd.h>
 
 void KeyboardInput::scan()
 {
