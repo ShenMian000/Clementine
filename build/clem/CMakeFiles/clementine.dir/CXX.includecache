@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../clem/attribute.h
+clem/common.hpp
+-
+string
+-
+
 ../clem/common.hpp
 stdio.h
 -
@@ -18,13 +24,49 @@ windows.h
 type.hpp
 ../clem/type.hpp
 
-../clem/renderer.h
+../clem/game_object.h
+vector
+-
+texture.hpp
+../clem/texture.hpp
+
+../clem/os.hpp
+
+../clem/texture.hpp
+attribute.h
+../clem/attribute.h
+
+../clem/type.hpp
+type/vector.h
+../clem/type/vector.h
+type/rect.h
+../clem/type/rect.h
+type/size.hpp
+../clem/type/size.hpp
+
+../clem/type/rect.h
+
+../clem/type/size.hpp
+assert.h
+-
+
+../clem/type/vector.h
+math.h
+-
 
 /home/sms/Clementine/clem/attribute.h
 clem/common.hpp
 -
 string
 -
+
+/home/sms/Clementine/clem/basic_physics.cpp
+basic_physics.h
+/home/sms/Clementine/clem/basic_physics.h
+
+/home/sms/Clementine/clem/basic_physics.h
+physics_component.h
+/home/sms/Clementine/clem/physics_component.h
 
 /home/sms/Clementine/clem/common.hpp
 stdio.h
@@ -38,26 +80,42 @@ windows.h
 type.hpp
 /home/sms/Clementine/clem/type.hpp
 
-/home/sms/Clementine/clem/common_renderer.cpp
-common_renderer.h
-/home/sms/Clementine/clem/common_renderer.h
-terminal.h
-/home/sms/Clementine/clem/terminal.h
+/home/sms/Clementine/clem/component.h
 
-/home/sms/Clementine/clem/common_renderer.h
+/home/sms/Clementine/clem/game_object.cpp
+game_object.h
+/home/sms/Clementine/clem/game_object.h
+scene.h
+/home/sms/Clementine/clem/scene.h
+component.h
+/home/sms/Clementine/clem/component.h
+physics_component.h
+/home/sms/Clementine/clem/physics_component.h
+
+/home/sms/Clementine/clem/game_object.h
 vector
 -
-clem/renderer.h
--
-common.hpp
-/home/sms/Clementine/clem/common.hpp
 texture.hpp
 /home/sms/Clementine/clem/texture.hpp
 
 /home/sms/Clementine/clem/os.hpp
 
-/home/sms/Clementine/clem/terminal.h
+/home/sms/Clementine/clem/physics_component.cpp
+physics_component.h
+/home/sms/Clementine/clem/physics_component.h
+
+/home/sms/Clementine/clem/physics_component.h
+component.h
+/home/sms/Clementine/clem/component.h
+common.hpp
+/home/sms/Clementine/clem/common.hpp
+clem/game_object.h
+-
+
+/home/sms/Clementine/clem/scene.h
 clem/common.hpp
+-
+vector
 -
 
 /home/sms/Clementine/clem/texture.hpp

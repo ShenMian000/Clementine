@@ -15,21 +15,22 @@ CommonRenderer::CommonRenderer(const Rect& rect)
 void CommonRenderer::render()
 {
 	// Çå¿ÕÆÁÄ»
-	string line(rect.size().x, '.');
-	for(ushort y = rect.y; y <= rect.height; y++)
+	string line(rect.width, '.');
+	for(ushort i = 0; i <= rect.height; i++)
 	{
-		Terminal::Cursor::moveTo(Vector(rect.x, y));
+		Terminal::Cursor::moveTo(Vector(rect.x, rect.y + i));
 		printf("%s", line.c_str());
 	}
 
 	// »æÖÆ
 	for(auto record : records)
 	{
-		Terminal::Cursor::moveTo({record.coord.x, rect.height - record.coord.y});
+		Terminal::Cursor::moveTo({record.coord.x, record.coord.y});
 		record.texture.put();
 	}
 	Terminal::Cursor::moveTo({0, 0});
 	putchar('\n'); // Ë¢ÐÂ»º³åÇø
+	Terminal::Cursor::moveTo({0, 0});
 }
 
 void CommonRenderer::draw(const Texture& texture, const Vector& coord)

@@ -20,8 +20,6 @@ struct Rect
 	Rect();
 	Rect(const Vector& vec, const Size& size);
 	Rect(ushort x, ushort y, ushort width, ushort height);
-
-	Size size() const;
 };
 
 #endif // CLEM_TYPE_RECT_HPP_

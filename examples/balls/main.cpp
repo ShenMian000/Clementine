@@ -19,7 +19,7 @@ class BallPhysics : public PhysicsComponent
 {
 public:
 	BallPhysics()
-			: border(Terminal::getWindowSize())
+			: border(Vector(0, Terminal::getWindowSize().y), Terminal::getWindowSize())
 	{
 		velocity.x = (double)rand() / RAND_MAX;
 		velocity.y = (double)rand() / RAND_MAX;
@@ -28,25 +28,25 @@ public:
 	void update(GameObject& obj)
 	{
 		auto pos = obj.getPosition();
-		if(pos.x <= 0 || pos.x >= border.x)
+		if(pos.x <= border.x || pos.x >= border.width)
 			velocity.x *= -1;
-		if(pos.y <= 0 || pos.y >= border.y)
+		if(pos.y <= border.y || pos.y >= border.height)
 			velocity.y *= -1;
 
-		obj.setPosition(obj.getPosition() + velocity);
+		PhysicsComponent::update(obj);
 	}
 
 private:
-	Size border;
+	Rect border;
 };
 
 int main()
 {
 	Terminal::Cursor::hide();
-	Scene               scene; // {5, 5, 30, 16}
+	Scene               scene({0, 0, 20, 10});
 	vector<GameObject*> balls;
 
-	srand(time(nullptr));  
+	srand(time(nullptr));
 
 	int num;
 	printf("Balls num: ");
@@ -62,6 +62,11 @@ int main()
 
 	while(true)
 	{
+		Terminal::Cursor::moveTo({0, 11});
+		auto pos = balls.back()->getPosition();
+		printf("%f %f", pos.x, pos.y);
+		getchar();
+
 		scene.update();
 		scene.render();
 

@@ -11,7 +11,7 @@
 using std::vector;
 
 Scene::Scene()
-		: Scene(Rect(Vector(0, 0), Terminal::getWindowSize()))
+		: Scene(Rect(Vector(0, Terminal::getWindowSize().y), Terminal::getWindowSize()))
 {
 }
 

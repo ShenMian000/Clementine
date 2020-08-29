@@ -4,6 +4,13 @@
 
 #include "physics_component.h"
 
+void PhysicsComponent::update(GameObject& obj)
+{
+	velocity += accelerate;
+
+	obj.setPosition(obj.getPosition() + velocity);
+}
+
 void PhysicsComponent::setVelocity(const Vector& vec)
 {
 	velocity = vec;

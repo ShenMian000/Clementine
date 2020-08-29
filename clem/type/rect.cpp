@@ -20,8 +20,3 @@ Rect::Rect(ushort x, ushort y, ushort width, ushort height)
 		: x(x), y(y), width(width), height(height)
 {
 }
-
-Size Rect::size() const
-{
-	return Size(width - x, height - y);
-}
