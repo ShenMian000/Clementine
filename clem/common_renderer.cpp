@@ -41,4 +41,3 @@ void CommonRenderer::clear()
 {
 	records.clear();
 }
-2
