@@ -16,10 +16,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    #- name: Clean
+    - name: Clean
       # É¾³ý CMakeCache.txt, ·ÀÖ¹ CMake Å×³ö´íÎó.
-    #  shell: bash
-    #  run: rm build/CMakeCache.txt
+      shell: bash
+      run: if[! -f "CMakeCache.txt"]; then rm CMakeCache.txt
 
     - name: Create Build Environment
       # Some projects don't allow in-source building, so create a separate build directory
