@@ -11,9 +11,7 @@ const vector<ushort>& KeyboardInput::update()
 {
 	events.clear();
 
-	for(auto pair : index)
-		if(GetAsyncKeyState(pair.first) & 0x8000)
-			events.push_back(pair.second);
+	scan();
 
 	static vector<ushort> lastEvents;
 	static clock_t        lastTime;
@@ -29,3 +27,41 @@ const vector<ushort>& KeyboardInput::update()
 
 	return events;
 }
+
+#ifdef OS_LINUX
+
+#include <termios.h>
+
+void KeyboardInput::scan()
+{
+	char    code;
+	termios oldTermios, newTermios;
+	auto    tty = open("/dev/tty", O_RDONLY);
+
+	tcgetattr(tty, &oldTermios);
+	newTermios = oldTermios;
+	newTermios.c_lflag &= ~(ICANON | ECHO);
+
+	tcsetattr(tty, TCSANOW, &newTermios);
+	read(tty, &code, 1);
+	tcsetattr(tty, TCSANOW, &oldTermios);
+
+	for(auto pair : index)
+		if(pair.first == code)
+			events.push_back(pair.second);
+}
+
+#endif // OS_LINUX
+
+#ifdef OS_WIN
+
+#include <windows.h>
+
+void KeyboardInput::scan()
+{
+	for(auto pair : index)
+		if(GetAsyncKeyState(pair.first) & 0x8000)
+			events.push_back(pair.second);
+}
+
+#endif // OS_WIN

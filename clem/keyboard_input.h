@@ -11,6 +11,8 @@ class KeyboardInput : public Input
 {
 public:
 	const std::vector<ushort>& update() override;
+
+	void scan();
 };
 
 #endif // CLEM_KEYBOARD_INPUT_H_
