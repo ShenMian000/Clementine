@@ -10,30 +10,35 @@
 
 class Scene;
 class Component;
+class PhysicsComponent;
 
 class GameObject
 {
 public:
 	GameObject(Scene& scene, const Texture& texture);
 
-	void update();
+	virtual void update();
+
+	void              setPhysics(PhysicsComponent* physics);
+	PhysicsComponent& getPhysics() const;
 
 	void addComponent(Component* com);
 	void removeComponent(Component* com);
 
-	void setPosition(const Coord& position);
-	void setDirection(int direction);
+	void setPosition(const Vector& position);
 	void setTexture(const Texture& texture);
 
-	const Coord&   getPosition() const;
-	ushort         getDirection() const;
+	const Vector&  getPosition() const;
 	const Texture& getTexture() const;
+
+	Scene& getScene() const;
 
 private:
 	Scene&  scene;
 
-	Coord   position;
-	ushort  direction;
+	PhysicsComponent* physics;
+
+	Vector  position;
 	Texture texture;
 
 	std::vector<Component*> components;

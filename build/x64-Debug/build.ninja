@@ -79,6 +79,14 @@ build clem\CMakeFiles\clementine.dir\attribute.cpp.obj: CXX_COMPILER__clementine
   TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
   TARGET_PDB = ..\..\lib\clementine.pdb
 
+build clem\CMakeFiles\clementine.dir\basic_physics.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\basic_physics.cpp || cmake_object_order_depends_target_clementine_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
+  OBJECT_DIR = clem\CMakeFiles\clementine.dir
+  OBJECT_FILE_DIR = clem\CMakeFiles\clementine.dir
+  TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
+  TARGET_PDB = ..\..\lib\clementine.pdb
+
 build clem\CMakeFiles\clementine.dir\camera.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\camera.cpp || cmake_object_order_depends_target_clementine_Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
@@ -119,6 +127,14 @@ build clem\CMakeFiles\clementine.dir\keyboard_input.cpp.obj: CXX_COMPILER__cleme
   TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
   TARGET_PDB = ..\..\lib\clementine.pdb
 
+build clem\CMakeFiles\clementine.dir\physics_component.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\physics_component.cpp || cmake_object_order_depends_target_clementine_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
+  OBJECT_DIR = clem\CMakeFiles\clementine.dir
+  OBJECT_FILE_DIR = clem\CMakeFiles\clementine.dir
+  TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
+  TARGET_PDB = ..\..\lib\clementine.pdb
+
 build clem\CMakeFiles\clementine.dir\scene.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\scene.cpp || cmake_object_order_depends_target_clementine_Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
@@ -135,6 +151,22 @@ build clem\CMakeFiles\clementine.dir\terminal.cpp.obj: CXX_COMPILER__clementine_
   TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
   TARGET_PDB = ..\..\lib\clementine.pdb
 
+build clem\CMakeFiles\clementine.dir\type\rect.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\type\rect.cpp || cmake_object_order_depends_target_clementine_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
+  OBJECT_DIR = clem\CMakeFiles\clementine.dir
+  OBJECT_FILE_DIR = clem\CMakeFiles\clementine.dir\type
+  TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
+  TARGET_PDB = ..\..\lib\clementine.pdb
+
+build clem\CMakeFiles\clementine.dir\type\vector.cpp.obj: CXX_COMPILER__clementine_Debug ..\..\clem\type\vector.cpp || cmake_object_order_depends_target_clementine_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
+  OBJECT_DIR = clem\CMakeFiles\clementine.dir
+  OBJECT_FILE_DIR = clem\CMakeFiles\clementine.dir\type
+  TARGET_COMPILE_PDB = clem\CMakeFiles\clementine.dir\clementine.pdb
+  TARGET_PDB = ..\..\lib\clementine.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target clementine
@@ -143,7 +175,7 @@ build clem\CMakeFiles\clementine.dir\terminal.cpp.obj: CXX_COMPILER__clementine_
 #############################################
 # Link the static library ..\..\lib\clementine.lib
 
-build ..\..\lib\clementine.lib: CXX_STATIC_LIBRARY_LINKER__clementine_Debug clem\CMakeFiles\clementine.dir\attribute.cpp.obj clem\CMakeFiles\clementine.dir\camera.cpp.obj clem\CMakeFiles\clementine.dir\common_renderer.cpp.obj clem\CMakeFiles\clementine.dir\game_object.cpp.obj clem\CMakeFiles\clementine.dir\input.cpp.obj clem\CMakeFiles\clementine.dir\keyboard_input.cpp.obj clem\CMakeFiles\clementine.dir\scene.cpp.obj clem\CMakeFiles\clementine.dir\terminal.cpp.obj
+build ..\..\lib\clementine.lib: CXX_STATIC_LIBRARY_LINKER__clementine_Debug clem\CMakeFiles\clementine.dir\attribute.cpp.obj clem\CMakeFiles\clementine.dir\basic_physics.cpp.obj clem\CMakeFiles\clementine.dir\camera.cpp.obj clem\CMakeFiles\clementine.dir\common_renderer.cpp.obj clem\CMakeFiles\clementine.dir\game_object.cpp.obj clem\CMakeFiles\clementine.dir\input.cpp.obj clem\CMakeFiles\clementine.dir\keyboard_input.cpp.obj clem\CMakeFiles\clementine.dir\physics_component.cpp.obj clem\CMakeFiles\clementine.dir\scene.cpp.obj clem\CMakeFiles\clementine.dir\terminal.cpp.obj clem\CMakeFiles\clementine.dir\type\rect.cpp.obj clem\CMakeFiles\clementine.dir\type\vector.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = clem\CMakeFiles\clementine.dir
@@ -203,6 +235,72 @@ build examples\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build examples\rebuild_cache: phony examples\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/shenm/Desktop/Clementine/examples/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build examples\balls\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\shenm\Desktop\Clementine\build\x64-Debug\examples\balls && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\shenm\Desktop\Clementine -BC:\Users\shenm\Desktop\Clementine\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build examples\balls\rebuild_cache: phony examples\balls\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target balls
+
+
+#############################################
+# Order-only phony target for balls
+
+build cmake_object_order_depends_target_balls_Debug: phony || cmake_object_order_depends_target_clementine_Debug
+
+build examples\balls\CMakeFiles\balls.dir\main.cpp.obj: CXX_COMPILER__balls_Debug ..\..\examples\balls\main.cpp || cmake_object_order_depends_target_balls_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\. -I"D:\Program Files\Program\boost_1_73_0"
+  OBJECT_DIR = examples\balls\CMakeFiles\balls.dir
+  OBJECT_FILE_DIR = examples\balls\CMakeFiles\balls.dir
+  TARGET_COMPILE_PDB = examples\balls\CMakeFiles\balls.dir\
+  TARGET_PDB = examples\balls\balls.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target balls
+
+
+#############################################
+# Link the executable examples\balls\balls.exe
+
+build examples\balls\balls.exe: CXX_EXECUTABLE_LINKER__balls_Debug examples\balls\CMakeFiles\balls.dir\main.cpp.obj | ..\..\lib\clementine.lib || ..\..\lib\clementine.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = ..\..\lib\clementine.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:"D:\Program Files\Program\boost_1_73_0\stage\lib"   -LIBPATH:C:\Users\shenm\Desktop\Clementine\lib
+  OBJECT_DIR = examples\balls\CMakeFiles\balls.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = examples\balls\CMakeFiles\balls.dir\
+  TARGET_FILE = examples\balls\balls.exe
+  TARGET_IMPLIB = examples\balls\balls.lib
+  TARGET_PDB = examples\balls\balls.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build examples\balls\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\shenm\Desktop\Clementine\build\x64-Debug\examples\balls && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build examples\balls\edit_cache: phony examples\balls\CMakeFiles\edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -273,6 +371,10 @@ build examples\greedy_snake\rebuild_cache: phony examples\greedy_snake\CMakeFile
 # =============================================================================
 # Target aliases.
 
+build balls: phony examples\balls\balls.exe
+
+build balls.exe: phony examples\balls\balls.exe
+
 build clementine: phony ..\..\lib\clementine.lib
 
 build clementine.lib: phony ..\..\lib\clementine.lib
@@ -303,7 +405,14 @@ build clem\all: phony ..\..\lib\clementine.lib
 #############################################
 # Folder: C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples
 
-build examples\all: phony examples\greedy_snake\all
+build examples\all: phony examples\balls\all examples\greedy_snake\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/balls
+
+build examples\balls\all: phony examples\balls\balls.exe
 
 # =============================================================================
 
@@ -319,14 +428,14 @@ build examples\greedy_snake\all: phony examples\greedy_snake\greedy_snake.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\CMakeLists.txt ..\..\clem\CMakeLists.txt ..\..\examples\CMakeLists.txt ..\..\examples\greedy_snake\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\CMakeLists.txt ..\..\clem\CMakeLists.txt ..\..\examples\CMakeLists.txt ..\..\examples\balls\CMakeLists.txt ..\..\examples\greedy_snake\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\CMakeLists.txt ..\..\clem\CMakeLists.txt ..\..\examples\CMakeLists.txt ..\..\examples\greedy_snake\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\CMakeLists.txt ..\..\clem\CMakeLists.txt ..\..\examples\CMakeLists.txt ..\..\examples\balls\CMakeLists.txt ..\..\examples\greedy_snake\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

@@ -25,10 +25,8 @@ void Camera::render(Renderer& renderer, const vector<GameObject*>& objs)
 bool Camera::inSight(const GameObject& obj) const
 {
 	auto pos = obj.getPosition();
-	if(rect.leftTop.x <= pos.x &&
-		 pos.x <= rect.rightBottom.x &&
-		 rect.leftTop.y <= pos.y &&
-		 pos.y <= rect.rightBottom.y)
+	if(rect.x <= pos.x && pos.x <= rect.width &&
+		 rect.y <= pos.y && pos.y <= rect.height)
 		return true;
 	else
 		return false;

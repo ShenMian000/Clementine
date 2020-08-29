@@ -18,7 +18,7 @@ public:
     static void show();
     static void hide();
 
-    static void moveTo(const Coord& coord);
+    static void moveTo(const Vector& coord);
 		static void moveUp(ushort n);
 		static void moveDown(ushort n);
 		static void moveRight(ushort n);
@@ -26,7 +26,7 @@ public:
   
   private:
 #ifdef OS_WIN
-    static Coord getCursorPosition();
+		static Vector getCursorPosition();
 #endif
 	};
 };

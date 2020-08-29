@@ -8,8 +8,10 @@
 #include "camera.h"
 #include "common_renderer.h"
 
+using std::vector;
+
 Scene::Scene()
-		: Scene(Rect({0, 0}, Terminal::getWindowSize()))
+		: Scene(Rect(Vector(0, 0), Terminal::getWindowSize()))
 {
 }
 
@@ -41,4 +43,9 @@ void Scene::addObject(GameObject* obj)
 void Scene::addCamera(Camera* cam)
 {
   cameras.push_back(cam);
+}
+
+const vector<Camera*>& Scene::getCameras() const
+{
+	return cameras;
 }

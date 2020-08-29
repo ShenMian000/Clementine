@@ -16,7 +16,7 @@ public:
 	CommonRenderer(const Rect& rect);
 
   void render() override;
-  void draw(const Texture& texture, const Coord& coord) override;
+	void draw(const Texture& texture, const Vector& coord) override;
   void clear() override;
 
 private:
@@ -24,7 +24,7 @@ private:
   struct pair
   {
     Texture texture;
-    Coord   coord;
+    Vector  coord;
   };
   std::vector<pair> records;
 };

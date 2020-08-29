@@ -10,7 +10,7 @@ class GameObject;
 class Component
 {
 public:
-  virtual void update(GameObject& obj) = 0;
+  virtual void update(GameObject&) = 0;
 };
 
 #endif // CLEM_COMPONENT_H_

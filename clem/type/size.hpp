@@ -13,11 +13,6 @@ struct Size
 	ushort x;
 	ushort y;
 
-	ushort area() const
-	{
-		return x * y;
-	}
-
 	Size()
 			: Size(0, 0)
 	{
@@ -27,6 +22,11 @@ struct Size
 			: x(x), y(y)
 	{
 		assert(x > 0 && y > 0);
+	}
+
+	ushort area() const
+	{
+		return x * y;
 	}
 };
 

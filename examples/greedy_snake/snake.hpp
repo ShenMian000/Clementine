@@ -14,9 +14,34 @@ class Snake : public GameObject
 {
 public:
 	Snake(Scene& scene)
-			: scene(scene), GameObject(scene, {'@', Attr(fore::green)})
+			: GameObject(scene, {'@', Attr(fore::green)}),
+				fruit(scene, {'*', Attr(fore::red)}),
+				border({0, 0}, Terminal::getWindowSize())
 	{
-		// addNewBody(); // 使 Snake 的默认长度为 2
+		generate();
+	}
+
+	void update() override
+	{
+		auto lastPos = getPosition();
+		GameObject::update();
+		auto pos = getPosition();
+		pos      = Vector((int)pos.x, (int)pos.y);
+
+		// 碰撞检测
+		if(pos.x < border.x || pos.x > border.width ||
+			 pos.y < border.y || pos.y > border.height)
+			assert(false);
+		
+		if(pos == fruit.getPosition())
+			generate();
+
+		if(Vector((int)pos.x, (int)pos.y) != Vector((int)lastPos.x, (int)lastPos.y))
+			bodys.back()->setPosition(lastPos);
+
+		// 身体随头部移动
+		for(size_t i = 0; i + 1 < bodys.size(); i++)
+			bodys[i]->setPosition(bodys[i + 1]->getPosition());
 	}
 
 	~Snake()
@@ -25,30 +50,18 @@ public:
 			delete body;
 	}
 
-	void update()
+	void generate()
 	{
-		// 身体随头部移动
-		bodys[0]->setPosition(getPosition());
-		for(size_t i = 1; i < bodys.size(); i++)
-			bodys[i]->setPosition(bodys[i + 1]->getPosition());
-	}
-
-	void isHit()
-	{
-
-	}
-
-	// 添加一节新身体
-	void addNewBody()
-	{
-		auto body = new GameObject(scene, {'#', Attr(fore::green)});
-		// body->setPosition(); // bodys.back()
-		bodys.push_back(body);
+		auto x = rand() % (int)border.width + (int)border.x;
+		auto y = rand() % (int)border.height + (int)border.y;
+		fruit.setPosition(Vector(x, y));
+		bodys.push_back(new GameObject(getScene(), {'#', Attr(fore::green)}));
 	}
 
 private:
-	Scene&              scene;
+	Rect                border;
 	vector<GameObject*> bodys;
+	GameObject          fruit;
 };
 
 #endif // CLEM_EXAMPLE_SNAKE_HPP_

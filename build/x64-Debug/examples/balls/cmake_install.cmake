@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/shenm/Desktop/Clementine/examples
+# Install script for directory: C:/Users/shenm/Desktop/Clementine/examples/balls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,12 +30,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/balls/cmake_install.cmake")
-  include("C:/Users/shenm/Desktop/Clementine/build/x64-Debug/examples/greedy_snake/cmake_install.cmake")
-
 endif()
 

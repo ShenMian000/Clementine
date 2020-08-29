@@ -5,6 +5,7 @@
 #include "game_object.h"
 #include "scene.h"
 #include "component.h"
+#include "physics_component.h"
 
 GameObject::GameObject(Scene& scene, const Texture& texture)
 		: scene(scene), texture(texture)
@@ -14,8 +15,21 @@ GameObject::GameObject(Scene& scene, const Texture& texture)
 
 void GameObject::update()
 {
+	if(physics != nullptr)
+		physics->update(*this);
+
 	for(const auto& com : components)
 		com->update(*this);
+}
+
+void GameObject::setPhysics(PhysicsComponent* physics)
+{
+	this->physics = physics;
+}
+
+PhysicsComponent& GameObject::getPhysics() const
+{
+	return *physics;
 }
 
 void GameObject::addComponent(Component* com)
@@ -28,19 +42,9 @@ void GameObject::removeComponent(Component* com)
 	// TODO
 }
 
-void GameObject::setPosition(const Coord& position)
+void GameObject::setPosition(const Vector& position)
 {
 	this->position = position;
-}
-
-void GameObject::setDirection(int direction)
-{
-	// 将方向调整至 0-359 之间
-	direction %= 360;
-	if(direction < 0)
-		direction = 360 + direction;
-
-	this->direction = direction;
 }
 
 void GameObject::setTexture(const Texture& texture)
@@ -48,17 +52,17 @@ void GameObject::setTexture(const Texture& texture)
 	this->texture = texture;
 }
 
-const Coord& GameObject::getPosition() const
+const Vector& GameObject::getPosition() const
 {
 	return position;
-}
-
-ushort GameObject::getDirection() const
-{
-	return direction;
 }
 
 const Texture& GameObject::getTexture() const
 {
 	return texture;
+}
+
+Scene& GameObject::getScene() const
+{
+	return scene;
 }

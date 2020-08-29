@@ -15,27 +15,25 @@ CommonRenderer::CommonRenderer(const Rect& rect)
 void CommonRenderer::render()
 {
 	// Çå¿ÕÆÁÄ»
-	string line(rect.size().x, ' ');
-	for(ushort y = 0; y < rect.size().y - 1; y++)
+	string line(rect.size().x, '.');
+	for(ushort y = rect.y; y < rect.height - 1; y++)
 	{
-		Terminal::Cursor::moveTo({rect.leftTop.x, rect.leftTop.y + y});
-		puts(line.c_str());
+		Terminal::Cursor::moveTo(Vector(rect.x, y));
+		printf("%s", line.c_str());
 	}
-	Terminal::Cursor::moveTo({rect.leftTop.x, rect.rightBottom.y});
 	printf("%s", line.c_str());
 
 	// »æÖÆ
-	auto size = Terminal::getWindowSize();
 	for(auto record : records)
 	{
-		Terminal::Cursor::moveTo({record.coord.x, size.y - record.coord.y});
+		Terminal::Cursor::moveTo({record.coord.x, rect.height - record.coord.y});
 		record.texture.put();
 	}
 	Terminal::Cursor::moveTo({0, 0});
 	putchar('\n'); // Ë¢ÐÂ»º³åÇø
 }
 
-void CommonRenderer::draw(const Texture& texture, const Coord& coord)
+void CommonRenderer::draw(const Texture& texture, const Vector& coord)
 {
 	records.push_back({texture, coord});
 }

@@ -17,7 +17,7 @@ Size Terminal::getWindowSize()
   return {winSize.ws_col, winSize.ws_row};
 }
 
-void Terminal::Cursor::moveTo(const Coord& coord)
+void Terminal::Cursor::moveTo(const Vector& coord)
 {
 	printf("\e[%u;%uH", (ushort)coord.y, (ushort)coord.x);
 }
@@ -46,7 +46,7 @@ Size Terminal::getWindowSize()
 	if(!ret)
 		assert(false);
 
-	return Size(screenInfo.srWindow.Right, screenInfo.srWindow.Bottom);
+	return Size(screenInfo.srWindow.Right + 1, screenInfo.srWindow.Bottom + 1);
 }
 
 void Terminal::Cursor::show()
@@ -81,7 +81,7 @@ void Terminal::Cursor::hide()
     assert(false);
 }
 
-void Terminal::Cursor::moveTo(const Coord& coord)
+void Terminal::Cursor::moveTo(const Vector& coord)
 {
 	SetConsoleCursorPosition(hStdOut, {(short)coord.x, (short)coord.y});
 }
@@ -110,7 +110,7 @@ void Terminal::Cursor::moveLeft(ushort n)
 	moveTo({pos.x - 1, pos.y});
 }
 
-Coord Terminal::Cursor::getCursorPosition()
+Vector Terminal::Cursor::getCursorPosition()
 {
 	CONSOLE_SCREEN_BUFFER_INFO bufInfo;
 

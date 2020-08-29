@@ -5,8 +5,8 @@
 #ifndef CLEM_TYPE_TYPE_HPP_
 #define CLEM_TYPE_TYPE_HPP_
 
-#include "type/coord.hpp"
+#include "type/vector.h"
+#include "type/rect.h"
 #include "type/size.hpp"
-#include "type/rect.hpp"
 
 #endif // CLEM_TYPE_TYPE_HPP_

@@ -6,6 +6,7 @@
 
 #include <clem/common.hpp>
 
+#include <clem/basic_physics.h>
 #include <clem/keyboard_input.h>
 
 #include <clem/attribute.h>
