@@ -19,8 +19,7 @@ jobs:
     - name: Clean
       # É¾³ı CMakeCache.txt, ·ÀÖ¹ CMake Å×³ö´íÎó.
       shell: bash
-      run:
-      - rm -rf build
+      run: rm -rf build
 
     - name: Create Build Environment
       run:
