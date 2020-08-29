@@ -7,9 +7,9 @@
 
 #include <clem/common.hpp>
 #include <vector>
-#include "renderer.h"
 
 class Camera;
+class Renderer;
 class GameObject;
 
 class Scene

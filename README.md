@@ -4,5 +4,5 @@
 
 ### 支持平台
  - Linux
- - MacOS
  - Windows
+ - MacOS

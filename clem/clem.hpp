@@ -6,6 +6,8 @@
 
 #include <clem/common.hpp>
 
+#include <clem/keyboard_input.h>
+
 #include <clem/attribute.h>
 #include <clem/camera.h>
 #include <clem/game_object.h>
