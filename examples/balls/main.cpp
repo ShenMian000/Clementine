@@ -64,7 +64,6 @@ private:
 
 int main()
 {
-
 	int  num;
 	Rect border;
 	printf("Balls num: ");
@@ -73,10 +72,8 @@ int main()
 	scanf("%f %f %f %f", &border.x, &border.y, &border.width, &border.height);
 
 	Terminal::Cursor::hide();
-
-	Scene scene(border);
-
 	srand(time(nullptr));
+	Scene scene(border);
 
 	for(int i = 0; i < num; i++)
 	{
