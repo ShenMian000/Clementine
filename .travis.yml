@@ -17,6 +17,8 @@ arch:
 
 script:
   - cd build
-  - if[! -f "CMakeCache.txt"]; then rm CMakeCache.txt fi
+  - if[! -f "CMakeCache.txt"]; then
+  - rm CMakeCache.txt
+  - fi
   - cmake ../
   - cmake --build .
