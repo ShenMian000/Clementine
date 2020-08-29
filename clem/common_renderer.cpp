@@ -25,9 +25,10 @@ void CommonRenderer::render()
 	printf("%s", line.c_str());
 
 	// »æÖÆ
+	auto size = Terminal::getWindowSize();
 	for(auto record : records)
 	{
-		Terminal::Cursor::moveTo(record.coord);
+		Terminal::Cursor::moveTo({record.coord.x, size.y - record.coord.y});
 		record.texture.put();
 	}
 	Terminal::Cursor::moveTo({0, 0});
