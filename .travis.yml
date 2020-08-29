@@ -16,6 +16,8 @@ arch:
   - s390x
 
 script:
+  - rm -rf build
+  - mkdir build
   - cd build
   - cmake ../
   - cmake --build .
