@@ -7,12 +7,12 @@
 
 #ifdef OS_WIN
 #include <windows.h>
-#define sleep(ms) Sleep((ms))
+#define sleep(ms) Sleep(ms)
 #endif
 
 #ifdef OS_LINUX
 #include <unistd.h>
-#define sleep(ms) usleep((ms) * 1000)
+#define sleep(ms) usleep(ms * 1000)
 #endif
 
 using namespace std;
