@@ -32,3 +32,11 @@
 964	1233	620423232	examples/balls/balls.exe	922888606d4fd386
 4	1264	620425073	examples/balls/CMakeFiles/balls.dir/main.cpp.obj	c4358d279b9d3c8f
 1264	1525	620425073	examples/balls/balls.exe	922888606d4fd386
+3	969	620425912	examples/balls/CMakeFiles/balls.dir/main.cpp.obj	c4358d279b9d3c8f
+969	1226	620425912	examples/balls/balls.exe	922888606d4fd386
+4	810	620425927	clem/CMakeFiles/clementine.dir/common_renderer.cpp.obj	4b0f5e55dcdfac2a
+810	878	620425927	../../lib/clementine.lib	825d191b45263133
+878	1099	620425928	examples/balls/balls.exe	922888606d4fd386
+4	720	620425937	clem/CMakeFiles/clementine.dir/common_renderer.cpp.obj	4b0f5e55dcdfac2a
+721	805	620425938	../../lib/clementine.lib	825d191b45263133
+805	1021	620425938	examples/balls/balls.exe	922888606d4fd386

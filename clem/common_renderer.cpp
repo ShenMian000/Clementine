@@ -15,7 +15,7 @@ CommonRenderer::CommonRenderer(const Rect& rect)
 void CommonRenderer::render()
 {
 	// Çå¿ÕÆÁÄ»
-	string line(rect.size().x, '.');
+	string line(rect.size().x, ' ');
 	for(ushort y = rect.y; y < rect.height - 1; y++)
 	{
 		Terminal::Cursor::moveTo(Vector(rect.x, y));
