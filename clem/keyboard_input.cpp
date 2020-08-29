@@ -30,25 +30,8 @@ const vector<ushort>& KeyboardInput::update()
 
 #ifdef OS_LINUX
 
-#include <assert.h>
-#include <termios.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <linux/input.h>
-
 void KeyboardInput::scan()
 {
-	input_event event;
-
-	auto keyboard = open("/dev/input/event1", O_RDONLY);
-	assert(keyboard != -1);
-
-	auto ret = read(keyboard, &event, sizeof(event));
-	if(ret != EV_KEY)
-		return;
-	
-	if(event.value == 1)
-		printf("%d %d", event.code, 'w');
 }
 
 #endif // OS_LINUX
