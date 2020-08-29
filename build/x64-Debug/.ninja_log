@@ -30,3 +30,5 @@
 3	841	620423232	clem/CMakeFiles/clementine.dir/common_renderer.cpp.obj	4b0f5e55dcdfac2a
 842	964	620423232	../../lib/clementine.lib	825d191b45263133
 964	1233	620423232	examples/balls/balls.exe	922888606d4fd386
+4	1264	620425073	examples/balls/CMakeFiles/balls.dir/main.cpp.obj	c4358d279b9d3c8f
+1264	1525	620425073	examples/balls/balls.exe	922888606d4fd386

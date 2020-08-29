@@ -7,10 +7,10 @@
 
 #ifdef OS_WIN
 #include <windows.h>
-#define SLEEP(ms) Sleep(ms)
+#define sleep(ms) Sleep(ms)
 #else
 #include <sys/wait.h>
-#define SLEEP(ms) sleep(ms * 1000)
+#define sleep(ms) usleep(ms * 1000)
 #endif
 
 using namespace std;
@@ -65,6 +65,6 @@ int main()
 		scene.update();
 		scene.render();
 
-		SLEEP(50);
+		sleep(50);
 	}
 }
