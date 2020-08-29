@@ -7,9 +7,11 @@
 #include <time.h>
 
 #ifdef OS_WIN
+#include <windows.h>
 #define sleep(ms) Sleep(ms)
 #else
-#define sleep(ms) sleep(ms * 1000)
+#include <unistd.h>
+#define sleep(ms) usleep(ms * 1000)
 #endif
 
 using Attr = Attribute;

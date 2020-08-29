@@ -8,9 +8,7 @@
 #ifdef OS_WIN
 #include <windows.h>
 #define sleep(ms) Sleep(ms)
-#endif
-
-#ifdef OS_LINUX
+#else
 #include <unistd.h>
 #define sleep(ms) usleep(ms * 1000)
 #endif
