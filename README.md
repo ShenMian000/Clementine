@@ -7,7 +7,8 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/shenmian/clementine/badge)](https://www.codefactor.io/repository/github/shenmian/clementine)
 [![Forks](https://img.shields.io/github/forks/ShenMian/Clementine)](https://github.com/ShenMian/Clementine/network/members)
 
-### 支持平台
- - Linux
- - Windows
- - MacOS
+### 简介
+C++命令行游戏框架.  
+
+### 特点
+- 支持多平台

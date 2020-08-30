@@ -60,39 +60,7 @@ void Attribute::complie(ushort attr)
 
 	attribute = "\e[";
 
-	if(fore != 0)
-		attribute += to_string(30 + fore + ';');
-
-	if(fore != 0)
-		attribute += to_string(40 + back / 10 + ';');
-
-	while(mode != 0)
-	{
-		switch(mode)
-		{
-		case mode::bold:
-			attribute += "1;";
-			mode |= ~mode::bold;
-			break;
-
-		case mode::underline:
-			attribute += "4;";
-			mode |= ~mode::underline;
-			break;
-
-		case mode::reverse:
-			attribute += "7;";
-			mode |= ~mode::reverse;
-			break;
-		}
-	}
-
-	if(attribute.back() == ';')
-		attribute.pop_back();
-
-	attribute += 'm';
-
-	/*switch(fore)
+	switch(fore)
 	{
 	case fore::black:
 		attribute += "30;";
@@ -160,7 +128,33 @@ void Attribute::complie(ushort attr)
 	case back::white:
 		attribute += "47;";
 		break;
-	}*/
+	}
+
+	while(mode != 0)
+	{
+		switch(mode)
+		{
+		case mode::bold:
+			attribute += "1;";
+			mode |= ~mode::bold;
+			break;
+
+		case mode::underline:
+			attribute += "4;";
+			mode |= ~mode::underline;
+			break;
+
+		case mode::reverse:
+			attribute += "7;";
+			mode |= ~mode::reverse;
+			break;
+		}
+	}
+
+	if(attribute.back() == ';')
+		attribute.pop_back();
+
+	attribute += 'm';
 }
 
 #endif // OS_LINUX

@@ -31,3 +31,9 @@
 4	121	620437535	../../lib/clementine.lib	fa9e5cc18ed9d91f
 4	749	620437591	examples/balls/CMakeFiles/balls.dir/main.cpp.obj	c4358d279b9d3c8f
 749	1042	620437592	examples/balls/balls.exe	922888606d4fd386
+4	1182	620453659	clem/CMakeFiles/clementine.dir/attribute.cpp.obj	59d5f3cdd55556d8
+34	1185	620453659	clem/CMakeFiles/clementine.dir/physics_component.cpp.obj	8aebdb4e9ddc6c3e
+23	1191	620453659	clem/CMakeFiles/clementine.dir/game_object.cpp.obj	ca16e6dd0ca2487e
+46	1253	620453659	examples/balls/CMakeFiles/balls.dir/main.cpp.obj	c4358d279b9d3c8f
+1192	1741	620453659	../../lib/clementine.lib	fa9e5cc18ed9d91f
+1741	2189	620453660	examples/balls/balls.exe	922888606d4fd386
